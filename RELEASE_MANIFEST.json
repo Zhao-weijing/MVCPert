@@ -1,0 +1,43 @@
+{
+  "package": "mvcpert-lightweight-release",
+  "scope": "Core model, training entry point, downstream analysis helpers, figure scripts, and small figure tables.",
+  "not_included": [
+    "raw HDF5 datasets",
+    "replicate parquet tables",
+    "trained checkpoints",
+    "prediction/profile HDF5 files",
+    "latent NPZ files",
+    "private run logs"
+  ],
+  "main_training_entry": "source/baseline/src/train_mvc.py",
+  "main_training_config": "configs/main_mvcpert_bbbc047_args.txt",
+  "smoke_config": "configs/smoke_args.txt",
+  "split_lock": "source/baseline/artifacts/split_locks/BBBC047_smiles_split_seed3407_official_v1.json",
+  "main_model_files": [
+    "source/baseline/src/MVCModel_HyperGate.py",
+    "source/baseline/src/model_MVC_residual_vae.py",
+    "source/baseline/src/model_MVC.py",
+    "source/baseline/src/dataset.py",
+    "source/baseline/src/utils.py"
+  ],
+  "analysis_files": [
+    "source/baseline/pathway_benchmark/evaluate_bbbc047_gene_level_downstream.py",
+    "source/baseline/pathway_benchmark/diagnose_bbbc047_model_fit_vs_pathway_gap.py",
+    "source/baseline/pathway_benchmark/bbbc047_pathway_benchmark.py"
+  ],
+  "figure_scripts": {
+    "figure2": "source/figures/paper/figure2_multimodal/scripts/generate_figure2_multimodal.py",
+    "figure3": "source/figures/paper/figure3_architecture_ablation/scripts/generate_figure3_architecture_ablation.py",
+    "figure4": "source/figures/paper/figure4_missing_modality_virtual_profiling/scripts/generate_figure4_missing_modality_virtual_profiling.py",
+    "figure5": "source/figures/paper/figure5_case_studies/scripts/generate_figure5_case_studies.py"
+  },
+  "environment_variables": {
+    "PYTHON_BIN": "Python executable; defaults to python3",
+    "MVCPERT_BBBC047_H5": "Path to the BBBC047 one-sample-per-molecule HDF5 file",
+    "MVCPERT_OUTPUT_BASE": "Training output directory",
+    "MVCPERT_ARTIFACT_ROOT": "Root directory for external prediction profiles and checkpoints",
+    "MVCPERT_DATA_ROOT": "Root directory for external datasets and metadata",
+    "MVCPERT_AIDD_ROOT": "Release source root; defaults to source/"
+  },
+  "privacy_policy": "Repository text should use placeholders such as <DATA_ROOT>, <ARTIFACT_ROOT>, and <PROJECT_ROOT> instead of private absolute paths."
+}

@@ -1,0 +1,56 @@
+moa_keyword,pathway_name
+CDK inhibitor,Cell cycle
+CDK inhibitor,DNA replication
+CDK inhibitor,p53 signaling pathway
+CDK inhibitor,Progesterone-mediated oocyte maturation
+EGFR inhibitor,ErbB signaling pathway
+EGFR inhibitor,MAPK signaling pathway
+EGFR inhibitor,PI3K-Akt signaling pathway
+EGFR inhibitor,Endocytosis
+HDAC inhibitor,Cell cycle
+HDAC inhibitor,p53 signaling pathway
+HDAC inhibitor,FoxO signaling pathway
+HDAC inhibitor,Apoptosis
+PI3K inhibitor,PI3K-Akt signaling pathway
+PI3K inhibitor,mTOR signaling pathway
+PI3K inhibitor,FoxO signaling pathway
+topoisomerase inhibitor,DNA replication
+topoisomerase inhibitor,p53 signaling pathway
+topoisomerase inhibitor,Cell cycle
+sodium channel blocker,Neuroactive ligand-receptor interaction
+sodium channel blocker,Calcium signaling pathway
+sodium channel blocker,cAMP signaling pathway
+acetylcholine receptor agonist,Calcium signaling pathway
+acetylcholine receptor agonist,Cholinergic synapse
+acetylcholine receptor agonist,Neuroactive ligand-receptor interaction
+acetylcholine receptor agonist,Cocaine addiction
+acetylcholine receptor agonist,Mitophagy
+acetylcholine receptor agonist,Nicotinate and nicotinamide metabolism
+acetylcholine receptor agonist,Viral carcinogenesis
+urokinase inhibitor,Focal adhesion
+urokinase inhibitor,PI3K-Akt signaling pathway
+urokinase inhibitor,Proteoglycans in cancer
+urokinase inhibitor,Breast cancer
+urokinase inhibitor,Estrogen signaling pathway
+urokinase inhibitor,PD-L1 expression and PD-1 checkpoint pathway in cancer
+urokinase inhibitor,Oxytocin signaling pathway
+tricyclic antidepressant,Neuroactive ligand-receptor interaction
+tricyclic antidepressant,cAMP signaling pathway
+tricyclic antidepressant,Calcium signaling pathway
+tricyclic antidepressant,Tight junction
+tricyclic antidepressant,Steroid biosynthesis
+opioid receptor agonist,Neuroactive ligand-receptor interaction
+opioid receptor agonist,cAMP signaling pathway
+opioid receptor agonist,Calcium signaling pathway
+opioid receptor agonist,Steroid biosynthesis
+opioid receptor agonist,Terpenoid backbone biosynthesis
+calcium channel blocker,Calcium signaling pathway
+calcium channel blocker,cAMP signaling pathway
+calcium channel blocker,Vascular smooth muscle contraction
+calcium channel blocker,Steroid biosynthesis
+calcium channel blocker,Terpenoid backbone biosynthesis
+steroid,AMPK signaling pathway
+steroid,Steroid hormone biosynthesis
+steroid,Estrogen signaling pathway
+steroid,Steroid biosynthesis
+steroid,Terpenoid backbone biosynthesis

@@ -1,0 +1,711 @@
+moa_keyword,pathway_name,overlap_count,compound_support,target_count,overlap_genes,source
+11-beta hydroxysteroid dehydrogenase inhibitor,Steroid hormone biosynthesis,2,3,4,HSD11B1|HSD11B2,bbbc036_target_grounded_allowlist
+5 alpha reductase inhibitor,Steroid hormone biosynthesis,3,2,4,AKR1D1|SRD5A1|SRD5A2,bbbc036_target_grounded_allowlist
+abc transporter expression enhancer,Estrogen signaling pathway,2,3,10,NCOA1|NCOA2,bbbc036_target_grounded_allowlist
+abc transporter expression enhancer,PPAR signaling pathway,2,3,10,NR1H3|RXRB,bbbc036_target_grounded_allowlist
+abl kinase inhibitor,Ras signaling pathway,6,1,13,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+abl kinase inhibitor,MAPK signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+abl kinase inhibitor,PI3K-Akt signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+abl kinase inhibitor,Calcium signaling pathway,4,1,13,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+abl kinase inhibitor,Rap1 signaling pathway,4,1,13,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+acetylcholine receptor agonist,Cholinergic synapse,5,11,5,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+acetylcholine receptor agonist,Neuroactive ligand-receptor interaction,5,11,5,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+acetylcholine receptor agonist,Regulation of actin cytoskeleton,5,11,5,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+acetylcholine receptor agonist,Calcium signaling pathway,4,11,5,CHRM1|CHRM2|CHRM3|CHRM5,bbbc036_target_grounded_allowlist
+acetylcholine receptor agonist,PI3K-Akt signaling pathway,2,11,5,CHRM1|CHRM2,bbbc036_target_grounded_allowlist
+acetylcholine receptor antagonist,Neuroactive ligand-receptor interaction,16,30,17,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|CHRNA10|CHRNA4|CHRNA7|CHRNA9|CHRNB2|DRD1|DRD2|GLRA1|GLRA2|GLRA3|GLRB,bbbc036_target_grounded_allowlist
+acetylcholine receptor antagonist,Cholinergic synapse,8,30,17,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|CHRNA4|CHRNA7|CHRNB2,bbbc036_target_grounded_allowlist
+acetylcholine receptor antagonist,Calcium signaling pathway,6,30,17,CHRM1|CHRM2|CHRM3|CHRM5|CHRNA7|DRD1,bbbc036_target_grounded_allowlist
+acetylcholine receptor antagonist,Regulation of actin cytoskeleton,5,30,17,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+acetylcholine receptor antagonist,cAMP signaling pathway,4,30,17,CHRM1|CHRM2|DRD1|DRD2,bbbc036_target_grounded_allowlist
+acetylcholine receptor inhibitor,Cholinergic synapse,4,1,4,CHRM1|CHRM2|CHRM3|CHRM4,bbbc036_target_grounded_allowlist
+acetylcholine receptor inhibitor,Neuroactive ligand-receptor interaction,4,1,4,CHRM1|CHRM2|CHRM3|CHRM4,bbbc036_target_grounded_allowlist
+acetylcholine receptor inhibitor,Regulation of actin cytoskeleton,4,1,4,CHRM1|CHRM2|CHRM3|CHRM4,bbbc036_target_grounded_allowlist
+acetylcholine receptor inhibitor,Calcium signaling pathway,3,1,4,CHRM1|CHRM2|CHRM3,bbbc036_target_grounded_allowlist
+acetylcholine receptor inhibitor,PI3K-Akt signaling pathway,2,1,4,CHRM1|CHRM2,bbbc036_target_grounded_allowlist
+acetylcholine release enhancer,Cholinergic synapse,5,4,8,KCNQ1|KCNQ2|KCNQ3|KCNQ4|KCNQ5,bbbc036_target_grounded_allowlist
+acetylcholine release enhancer,Steroid hormone biosynthesis,2,4,8,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+acetylcholine release stimulant,Cholinergic synapse,4,2,5,KCNQ2|KCNQ3|KCNQ4|KCNQ5,bbbc036_target_grounded_allowlist
+acetylcholinesterase inhibitor,Gap junction,3,7,4,TUBA1A|TUBB|TUBB4B,bbbc036_target_grounded_allowlist
+adenosine deaminase inhibitor,p53 signaling pathway,2,2,10,RRM2|RRM2B,bbbc036_target_grounded_allowlist
+adenosine receptor agonist,Neuroactive ligand-receptor interaction,4,11,6,ADORA1|ADORA2A|ADORA2B|ADORA3,bbbc036_target_grounded_allowlist
+adenosine receptor agonist,Calcium signaling pathway,3,11,6,ADORA2A|ADORA2B|PRKACA,bbbc036_target_grounded_allowlist
+adenosine receptor agonist,Vascular smooth muscle contraction,3,11,6,ADORA2A|ADORA2B|PRKACA,bbbc036_target_grounded_allowlist
+adenosine receptor agonist,cAMP signaling pathway,3,11,6,ADORA1|ADORA2A|PRKACA,bbbc036_target_grounded_allowlist
+adenosine receptor agonist,Estrogen signaling pathway,2,11,6,HSP90B1|PRKACA,bbbc036_target_grounded_allowlist
+adenosine receptor antagonist,Neuroactive ligand-receptor interaction,4,12,5,ADORA1|ADORA2A|ADORA2B|ADORA3,bbbc036_target_grounded_allowlist
+adenosine receptor antagonist,Calcium signaling pathway,2,12,5,ADORA2A|ADORA2B,bbbc036_target_grounded_allowlist
+adenosine receptor antagonist,Rap1 signaling pathway,2,12,5,ADORA2A|ADORA2B,bbbc036_target_grounded_allowlist
+adenosine receptor antagonist,Vascular smooth muscle contraction,2,12,5,ADORA2A|ADORA2B,bbbc036_target_grounded_allowlist
+adenosine receptor antagonist,cAMP signaling pathway,2,12,5,ADORA1|ADORA2A,bbbc036_target_grounded_allowlist
+adenylate cyclase stimulant,Adrenergic signaling in cardiomyocytes,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylate cyclase stimulant,Estrogen signaling pathway,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylate cyclase stimulant,Gap junction,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylate cyclase stimulant,Glutamatergic synapse,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylate cyclase stimulant,Ovarian steroidogenesis,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylyl cyclase activator,Adrenergic signaling in cardiomyocytes,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylyl cyclase activator,Estrogen signaling pathway,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylyl cyclase activator,Gap junction,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylyl cyclase activator,Glutamatergic synapse,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adenylyl cyclase activator,Ovarian steroidogenesis,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+adiponectin receptor agonist,Apoptosis,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+adiponectin receptor agonist,Chemokine signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+adiponectin receptor agonist,FoxO signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+adiponectin receptor agonist,MAPK signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+adiponectin receptor agonist,PI3K-Akt signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+adrenergic receptor agonist,Neuroactive ligand-receptor interaction,10,35,14,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|ADRB2|ADRB3|HTR2A,bbbc036_target_grounded_allowlist
+adrenergic receptor agonist,cGMP-PKG signaling pathway,10,35,14,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|ADRB2|ADRB3|MAPK1,bbbc036_target_grounded_allowlist
+adrenergic receptor agonist,Calcium signaling pathway,7,35,14,ADRA1A|ADRA1B|ADRA1D|ADRB1|ADRB2|ADRB3|HTR2A,bbbc036_target_grounded_allowlist
+adrenergic receptor agonist,Adrenergic signaling in cardiomyocytes,6,35,14,ADRA1A|ADRA1B|ADRA1D|ADRB1|ADRB2|MAPK1,bbbc036_target_grounded_allowlist
+adrenergic receptor agonist,cAMP signaling pathway,6,35,14,ADRB1|ADRB2|MAPK1|PIK3R1|PIK3R2|PIK3R3,bbbc036_target_grounded_allowlist
+adrenergic receptor antagonist,Neuroactive ligand-receptor interaction,28,51,37,ADORA2A|ADRA1A|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|ADRB2|ADRB3|DRD1|DRD2|DRD3|DRD4|DRD5|GABRA1|HRH1|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+adrenergic receptor antagonist,Calcium signaling pathway,16,51,37,ADORA2A|ADRA1A|ADRA1D|ADRB1|ADRB2|ADRB3|DRD1|DRD5|HRH1|HTR2A|HTR2B|HTR2C|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+adrenergic receptor antagonist,Serotonergic synapse,14,51,37,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR3A|HTR4|HTR5A|HTR6|HTR7|SLC6A4,bbbc036_target_grounded_allowlist
+adrenergic receptor antagonist,cAMP signaling pathway,13,51,37,ADORA2A|ADRB1|ADRB2|DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR4|HTR6,bbbc036_target_grounded_allowlist
+adrenergic receptor antagonist,cGMP-PKG signaling pathway,9,51,37,ADRA1A|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|ADRB2|ADRB3|KCNJ8,bbbc036_target_grounded_allowlist
+adrenergic receptor partial agonist,Neuroactive ligand-receptor interaction,11,2,11,ADRA2A|ADRB1|ADRB2|ADRB3|DRD2|HTR1B|HTR1D|HTR1E|HTR1F|HTR2B|HTR7,bbbc036_target_grounded_allowlist
+adrenergic receptor partial agonist,cAMP signaling pathway,7,2,11,ADRB1|ADRB2|DRD2|HTR1B|HTR1D|HTR1E|HTR1F,bbbc036_target_grounded_allowlist
+adrenergic receptor partial agonist,Serotonergic synapse,6,2,11,HTR1B|HTR1D|HTR1E|HTR1F|HTR2B|HTR7,bbbc036_target_grounded_allowlist
+adrenergic receptor partial agonist,Calcium signaling pathway,5,2,11,ADRB1|ADRB2|ADRB3|HTR2B|HTR7,bbbc036_target_grounded_allowlist
+adrenergic receptor partial agonist,cGMP-PKG signaling pathway,4,2,11,ADRA2A|ADRB1|ADRB2|ADRB3,bbbc036_target_grounded_allowlist
+adrenergic transmitter uptake inhibitor,Glutamatergic synapse,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+adrenergic transmitter uptake inhibitor,Neuroactive ligand-receptor interaction,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+adrenergic transmitter uptake inhibitor,cAMP signaling pathway,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+adrenergic transmitter uptake inhibitor,Calcium signaling pathway,4,2,10,GRIN1|GRIN2A|GRIN2C|GRIN2D,bbbc036_target_grounded_allowlist
+adrenergic transmitter uptake inhibitor,Dopaminergic synapse,3,2,10,GRIN2A|GRIN2B|SLC6A3,bbbc036_target_grounded_allowlist
+ampk inhibitor,MAPK signaling pathway,6,1,13,EPHA2|FLT1|FLT3|KDR|MKNK1|RPS6KA1,bbbc036_target_grounded_allowlist
+ampk inhibitor,PI3K-Akt signaling pathway,5,1,13,EPHA2|FLT1|FLT3|KDR|PRKAA1,bbbc036_target_grounded_allowlist
+ampk inhibitor,Rap1 signaling pathway,4,1,13,EPHA2|FLT1|KDR|SRC,bbbc036_target_grounded_allowlist
+ampk inhibitor,Ras signaling pathway,4,1,13,EPHA2|FLT1|FLT3|KDR,bbbc036_target_grounded_allowlist
+ampk inhibitor,Focal adhesion,3,1,13,FLT1|KDR|SRC,bbbc036_target_grounded_allowlist
+anandamide transport inhibitor,Neuroactive ligand-receptor interaction,3,1,4,CNR1|CNR2|TRPV1,bbbc036_target_grounded_allowlist
+angiogenesis inhibitor,MAPK signaling pathway,11,6,22,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+angiogenesis inhibitor,Adrenergic signaling in cardiomyocytes,9,6,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4|SCN5A,bbbc036_target_grounded_allowlist
+angiogenesis inhibitor,Calcium signaling pathway,7,6,22,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S,bbbc036_target_grounded_allowlist
+angiogenesis inhibitor,Cholinergic synapse,4,6,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+angiogenesis inhibitor,GABAergic synapse,4,6,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+angiotensin receptor antagonist,Neuroactive ligand-receptor interaction,3,5,3,AGTR1|AGTR2|PTGER4,bbbc036_target_grounded_allowlist
+angiotensin receptor antagonist,Adrenergic signaling in cardiomyocytes,2,5,3,AGTR1|AGTR2,bbbc036_target_grounded_allowlist
+anti-hcve2,Neuroactive ligand-receptor interaction,11,1,11,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+anti-hcve2,Serotonergic synapse,11,1,11,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+anti-hcve2,Calcium signaling pathway,6,1,11,HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+anti-hcve2,cAMP signaling pathway,6,1,11,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR6,bbbc036_target_grounded_allowlist
+anti-hcve2,Gap junction,3,1,11,HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+anti-inflammatory agent,MAPK signaling pathway,2,1,3,IL1B|TNF,bbbc036_target_grounded_allowlist
+anti-inflammatory agent,NF-kappa B signaling pathway,2,1,3,IL1B|TNF,bbbc036_target_grounded_allowlist
+antiamyloidogenic agent,Dopaminergic synapse,3,5,4,DRD1|DRD2|DRD3,bbbc036_target_grounded_allowlist
+antiamyloidogenic agent,Neuroactive ligand-receptor interaction,3,5,4,DRD1|DRD2|DRD3,bbbc036_target_grounded_allowlist
+antiamyloidogenic agent,Gap junction,2,5,4,DRD1|DRD2,bbbc036_target_grounded_allowlist
+antiamyloidogenic agent,cAMP signaling pathway,2,5,4,DRD1|DRD2,bbbc036_target_grounded_allowlist
+ap inhibitor,Apoptosis,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+ap inhibitor,Chemokine signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+ap inhibitor,FoxO signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+ap inhibitor,MAPK signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+ap inhibitor,PI3K-Akt signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+apoptosis stimulant,MAPK signaling pathway,6,5,15,CASP3|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+apoptosis stimulant,Ras signaling pathway,6,5,15,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+apoptosis stimulant,PI3K-Akt signaling pathway,5,5,15,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+apoptosis stimulant,Calcium signaling pathway,4,5,15,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+apoptosis stimulant,Rap1 signaling pathway,4,5,15,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+aryl hydrocarbon receptor antagonist,Apoptosis,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+aryl hydrocarbon receptor antagonist,Chemokine signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+aryl hydrocarbon receptor antagonist,FoxO signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+aryl hydrocarbon receptor antagonist,MAPK signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+aryl hydrocarbon receptor antagonist,PI3K-Akt signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+atpase inhibitor,Adrenergic signaling in cardiomyocytes,2,12,4,ATP1A1|ATP2A1,bbbc036_target_grounded_allowlist
+atpase inhibitor,cAMP signaling pathway,2,12,4,ATP1A1|ATP2A1,bbbc036_target_grounded_allowlist
+atpase inhibitor,cGMP-PKG signaling pathway,2,12,4,ATP1A1|ATP2A1,bbbc036_target_grounded_allowlist
+atr kinase inhibitor,Cell cycle,2,1,2,ATM|ATR,bbbc036_target_grounded_allowlist
+atr kinase inhibitor,p53 signaling pathway,2,1,2,ATM|ATR,bbbc036_target_grounded_allowlist
+autotaxin inhibitor,Estrogen signaling pathway,2,1,3,ESR1|ESR2,bbbc036_target_grounded_allowlist
+bacterial cell wall synthesis inhibitor,Steroid hormone biosynthesis,2,13,4,CYP1A2|CYP3A4,bbbc036_target_grounded_allowlist
+bcr-abl kinase inhibitor,Ras signaling pathway,6,1,13,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+bcr-abl kinase inhibitor,MAPK signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+bcr-abl kinase inhibitor,PI3K-Akt signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+bcr-abl kinase inhibitor,Calcium signaling pathway,4,1,13,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+bcr-abl kinase inhibitor,Rap1 signaling pathway,4,1,13,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+benzodiazepine receptor agonist,Neuroactive ligand-receptor interaction,23,8,26,ADRA1A|GABBR1|GABBR2|GABRA1|GABRA2|GABRA3|GABRA4|GABRA5|GABRA6|GABRB1|GABRB2|GABRB3|GABRD|GABRE|GABRG1|GABRG2|GABRG3|GABRP|GABRQ|GABRR1|GABRR2|GABRR3|TSPO,bbbc036_target_grounded_allowlist
+benzodiazepine receptor agonist,GABAergic synapse,21,8,26,GABBR1|GABBR2|GABRA1|GABRA2|GABRA3|GABRA4|GABRA5|GABRA6|GABRB1|GABRB2|GABRB3|GABRD|GABRE|GABRG1|GABRG2|GABRG3|GABRP|GABRQ|GABRR1|GABRR2|GABRR3,bbbc036_target_grounded_allowlist
+benzodiazepine receptor agonist,Serotonergic synapse,3,8,26,GABRB1|GABRB2|GABRB3,bbbc036_target_grounded_allowlist
+benzodiazepine receptor agonist,Estrogen signaling pathway,2,8,26,GABBR1|GABBR2,bbbc036_target_grounded_allowlist
+benzodiazepine receptor agonist,cAMP signaling pathway,2,8,26,GABBR1|GABBR2,bbbc036_target_grounded_allowlist
+breast cancer resistance protein inhibitor,PI3K-Akt signaling pathway,6,2,17,CDK6|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+breast cancer resistance protein inhibitor,Ras signaling pathway,6,2,17,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+breast cancer resistance protein inhibitor,MAPK signaling pathway,5,2,17,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+breast cancer resistance protein inhibitor,Calcium signaling pathway,4,2,17,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+breast cancer resistance protein inhibitor,Rap1 signaling pathway,4,2,17,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+calcineurin inhibitor,cGMP-PKG signaling pathway,4,2,14,NFATC1|PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+calcineurin inhibitor,Calcium signaling pathway,3,2,14,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+calcineurin inhibitor,MAPK signaling pathway,3,2,14,NFATC1|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+calcineurin inhibitor,Glutamatergic synapse,2,2,14,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+calcineurin inhibitor,Steroid hormone biosynthesis,2,2,14,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+calcium channel activator,Vascular smooth muscle contraction,2,2,5,KCNMA1|KCNU1,bbbc036_target_grounded_allowlist
+calcium channel activator,cGMP-PKG signaling pathway,2,2,5,KCNMA1|KCNU1,bbbc036_target_grounded_allowlist
+calcium channel blocker,Calcium signaling pathway,23,24,65,ADRA1A|ADRA1B|ADRA1D|ATP2A1|CACNA1A|CACNA1B|CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CALM1|CHRM1|CHRM2|CHRM3|CHRM5|HRH1|ORAI1|PDE1A|PDE1B|TNNC1,bbbc036_target_grounded_allowlist
+calcium channel blocker,Adrenergic signaling in cardiomyocytes,19,24,65,ADRA1A|ADRA1B|ADRA1D|ATP1A1|ATP2A1|CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNA2D1|CACNA2D2|CACNB1|CACNB2|CACNB3|CACNB4|CALM1|KCNQ1|SCN5A|TNNC1,bbbc036_target_grounded_allowlist
+calcium channel blocker,MAPK signaling pathway,15,24,65,CACNA1A|CACNA1B|CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNA2D1|CACNA2D2|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+calcium channel blocker,Cholinergic synapse,13,24,65,CACNA1A|CACNA1B|CACNA1C|CACNA1D|CACNA1F|CACNA1S|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|KCNQ1|KCNQ4,bbbc036_target_grounded_allowlist
+calcium channel blocker,cGMP-PKG signaling pathway,11,24,65,ADORA3|ADRA1A|ADRA1B|ADRA1D|ATP1A1|ATP2A1|CACNA1C|CACNA1D|CACNA1F|CACNA1S|CALM1,bbbc036_target_grounded_allowlist
+calcium channel inhibitor,MAPK signaling pathway,11,1,22,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+calcium channel inhibitor,Adrenergic signaling in cardiomyocytes,9,1,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4|SCN5A,bbbc036_target_grounded_allowlist
+calcium channel inhibitor,Calcium signaling pathway,7,1,22,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S,bbbc036_target_grounded_allowlist
+calcium channel inhibitor,Cholinergic synapse,4,1,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+calcium channel inhibitor,GABAergic synapse,4,1,22,CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+calcium/calmodulin dependent protein kinase inhibitor,Adrenergic signaling in cardiomyocytes,7,2,16,AKT1|CAMK2A|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA,bbbc036_target_grounded_allowlist
+calcium/calmodulin dependent protein kinase inhibitor,Dopaminergic synapse,7,2,16,AKT1|CAMK2A|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+calcium/calmodulin dependent protein kinase inhibitor,FoxO signaling pathway,7,2,16,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|SGK1,bbbc036_target_grounded_allowlist
+calcium/calmodulin dependent protein kinase inhibitor,MAPK signaling pathway,7,2,16,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+calcium/calmodulin dependent protein kinase inhibitor,ErbB signaling pathway,6,2,16,AKT1|CAMK2A|MAPK1|MAPK8|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+calmodulin antagonist,Adrenergic signaling in cardiomyocytes,2,6,2,CALM1|CALM2,bbbc036_target_grounded_allowlist
+calmodulin antagonist,Calcium signaling pathway,2,6,2,CALM1|CALM2,bbbc036_target_grounded_allowlist
+calmodulin antagonist,Dopaminergic synapse,2,6,2,CALM1|CALM2,bbbc036_target_grounded_allowlist
+calmodulin antagonist,Estrogen signaling pathway,2,6,2,CALM1|CALM2,bbbc036_target_grounded_allowlist
+calmodulin antagonist,Rap1 signaling pathway,2,6,2,CALM1|CALM2,bbbc036_target_grounded_allowlist
+calpain inhibitor,Apoptosis,3,1,3,CAPN1|CTSB|CTSL,bbbc036_target_grounded_allowlist
+cannabinoid receptor agonist,Neuroactive ligand-receptor interaction,4,13,16,CNR1|CNR2|GLRA1|TRPV1,bbbc036_target_grounded_allowlist
+cannabinoid receptor agonist,Calcium signaling pathway,3,13,16,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+cannabinoid receptor agonist,MAPK signaling pathway,3,13,16,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+cannabinoid receptor antagonist,Neuroactive ligand-receptor interaction,2,4,3,CNR1|CNR2,bbbc036_target_grounded_allowlist
+cannabinoid receptor inhibitor,Neuroactive ligand-receptor interaction,2,1,3,CNR1|CNR2,bbbc036_target_grounded_allowlist
+cannabinoid receptor inverse agonist,Neuroactive ligand-receptor interaction,2,2,2,CNR1|CNR2,bbbc036_target_grounded_allowlist
+cannabinoid receptor partial agonist,Neuroactive ligand-receptor interaction,2,1,2,CNR1|CNR2,bbbc036_target_grounded_allowlist
+casein kinase inhibitor,NF-kappa B signaling pathway,3,3,7,CSNK2A1|CSNK2A2|CSNK2B,bbbc036_target_grounded_allowlist
+caspase activator,Apoptosis,2,3,3,CASP3|CYCS,bbbc036_target_grounded_allowlist
+caspase activator,p53 signaling pathway,2,3,3,CASP3|CYCS,bbbc036_target_grounded_allowlist
+cathepsin inhibitor,Apoptosis,3,2,3,CAPN1|CTSB|CTSL,bbbc036_target_grounded_allowlist
+cc chemokine receptor antagonist,Neuroactive ligand-receptor interaction,2,2,4,CNR1|CNR2,bbbc036_target_grounded_allowlist
+cck receptor antagonist,Neuroactive ligand-receptor interaction,5,5,6,CCKAR|CCKBR|GABRA1|GABRB2|GABRG2,bbbc036_target_grounded_allowlist
+cck receptor antagonist,GABAergic synapse,3,5,6,GABRA1|GABRB2|GABRG2,bbbc036_target_grounded_allowlist
+cck receptor antagonist,Calcium signaling pathway,2,5,6,CCKAR|CCKBR,bbbc036_target_grounded_allowlist
+cdc inhibitor,Cell cycle,3,3,3,CDC25A|CDC25B|CDC25C,bbbc036_target_grounded_allowlist
+cdk inhibitor,Cell cycle,8,13,19,CCNB1|CCND1|CCNE1|CDK1|CDK2|CDK4|CDK6|GSK3B,bbbc036_target_grounded_allowlist
+cdk inhibitor,PI3K-Akt signaling pathway,7,13,19,CCND1|CCNE1|CDK2|CDK4|CDK6|EGFR|GSK3B,bbbc036_target_grounded_allowlist
+cdk inhibitor,p53 signaling pathway,7,13,19,CCNB1|CCND1|CCNE1|CDK1|CDK2|CDK4|CDK6,bbbc036_target_grounded_allowlist
+cdk inhibitor,Chemokine signaling pathway,4,13,19,GSK3A|GSK3B|PTK2B|SRC,bbbc036_target_grounded_allowlist
+cdk inhibitor,Focal adhesion,4,13,19,CCND1|EGFR|GSK3B|SRC,bbbc036_target_grounded_allowlist
+cell cycle inhibitor,Cell cycle,2,2,10,HDAC1|HDAC2,bbbc036_target_grounded_allowlist
+cetylcholine receptor agonist,Neuroactive ligand-receptor interaction,4,1,4,CHRM1|DRD2|DRD3|HTR2A,bbbc036_target_grounded_allowlist
+cetylcholine receptor agonist,Calcium signaling pathway,2,1,4,CHRM1|HTR2A,bbbc036_target_grounded_allowlist
+cetylcholine receptor agonist,Dopaminergic synapse,2,1,4,DRD2|DRD3,bbbc036_target_grounded_allowlist
+cetylcholine receptor agonist,Gap junction,2,1,4,DRD2|HTR2A,bbbc036_target_grounded_allowlist
+cetylcholine receptor agonist,cAMP signaling pathway,2,1,4,CHRM1|DRD2,bbbc036_target_grounded_allowlist
+cftr channel activator,Cell cycle,2,1,7,CDK1|CDK2,bbbc036_target_grounded_allowlist
+cftr channel activator,p53 signaling pathway,2,1,7,CDK1|CDK2,bbbc036_target_grounded_allowlist
+chloride channel blocker,Arachidonic acid metabolism,3,4,34,AKR1C3|PTGS1|PTGS2,bbbc036_target_grounded_allowlist
+chloride channel blocker,Gap junction,2,4,34,GJA1|GJD2,bbbc036_target_grounded_allowlist
+chloride channel blocker,Ovarian steroidogenesis,2,4,34,AKR1C3|PTGS2,bbbc036_target_grounded_allowlist
+chloride channel blocker,Serotonergic synapse,2,4,34,PTGS1|PTGS2,bbbc036_target_grounded_allowlist
+collagen stimulant,Calcium signaling pathway,2,1,2,HTR2A|HTR2C,bbbc036_target_grounded_allowlist
+collagen stimulant,Gap junction,2,1,2,HTR2A|HTR2C,bbbc036_target_grounded_allowlist
+collagen stimulant,Neuroactive ligand-receptor interaction,2,1,2,HTR2A|HTR2C,bbbc036_target_grounded_allowlist
+collagen stimulant,Serotonergic synapse,2,1,2,HTR2A|HTR2C,bbbc036_target_grounded_allowlist
+colony stimulating factor receptor inhibitor,Ras signaling pathway,6,1,13,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+colony stimulating factor receptor inhibitor,MAPK signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+colony stimulating factor receptor inhibitor,PI3K-Akt signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+colony stimulating factor receptor inhibitor,Calcium signaling pathway,4,1,13,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+colony stimulating factor receptor inhibitor,Rap1 signaling pathway,4,1,13,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+cyclooxygenase inhibitor,Arachidonic acid metabolism,3,37,13,PTGS1|PTGS2|TBXAS1,bbbc036_target_grounded_allowlist
+cyclooxygenase inhibitor,Serotonergic synapse,2,37,13,PTGS1|PTGS2,bbbc036_target_grounded_allowlist
+cyclophilin inhibitor,Calcium signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+cyclophilin inhibitor,cGMP-PKG signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+cyclophilin inhibitor,Glutamatergic synapse,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+cyclophilin inhibitor,MAPK signaling pathway,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+cyclophilin inhibitor,Steroid hormone biosynthesis,2,1,13,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+cytochrome p450 inhibitor,Steroid hormone biosynthesis,3,12,20,CYP11B1|CYP1B1|CYP3A4,bbbc036_target_grounded_allowlist
+dna damaging,MAPK signaling pathway,6,1,13,EPHA2|FLT1|FLT3|KDR|MKNK1|RPS6KA1,bbbc036_target_grounded_allowlist
+dna damaging,PI3K-Akt signaling pathway,5,1,13,EPHA2|FLT1|FLT3|KDR|PRKAA1,bbbc036_target_grounded_allowlist
+dna damaging,Rap1 signaling pathway,4,1,13,EPHA2|FLT1|KDR|SRC,bbbc036_target_grounded_allowlist
+dna damaging,Ras signaling pathway,4,1,13,EPHA2|FLT1|FLT3|KDR,bbbc036_target_grounded_allowlist
+dna damaging,Focal adhesion,3,1,13,FLT1|KDR|SRC,bbbc036_target_grounded_allowlist
+dna dependent protein kinase inhibitor,FoxO signaling pathway,10,2,18,AKT1|MAPK1|MAPK11|MAPK12|MAPK8|PIK3CA|PIK3CB|PIK3CD|PLK1|SGK1,bbbc036_target_grounded_allowlist
+dna dependent protein kinase inhibitor,PI3K-Akt signaling pathway,10,2,18,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3CG|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+dna dependent protein kinase inhibitor,ErbB signaling pathway,9,2,18,AKT1|MAPK1|MAPK8|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+dna dependent protein kinase inhibitor,mTOR signaling pathway,9,2,18,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+dna dependent protein kinase inhibitor,Focal adhesion,8,2,18,AKT1|MAPK1|MAPK8|PIK3CA|PIK3CB|PIK3CD|PRKCA|ROCK1,bbbc036_target_grounded_allowlist
+dna directed dna polymerase inhibitor,Estrogen signaling pathway,3,4,5,ESR1|ESR2|GPER1,bbbc036_target_grounded_allowlist
+dopamine receptor agonist,Neuroactive ligand-receptor interaction,23,23,25,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|CHRM1|DRD1|DRD2|DRD3|DRD4|DRD5|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+dopamine receptor agonist,Calcium signaling pathway,12,23,25,ADRA1A|ADRA1B|ADRA1D|CHRM1|DRD1|DRD5|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+dopamine receptor agonist,Serotonergic synapse,11,23,25,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+dopamine receptor agonist,cAMP signaling pathway,10,23,25,CHRM1|DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR6,bbbc036_target_grounded_allowlist
+dopamine receptor agonist,Dopaminergic synapse,7,23,25,CALY|DRD1|DRD2|DRD3|DRD4|DRD5|SLC6A3,bbbc036_target_grounded_allowlist
+dopamine receptor antagonist,Neuroactive ligand-receptor interaction,31,47,45,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|DRD1|DRD2|DRD3|DRD4|DRD5|HRH1|HRH2|HRH4|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+dopamine receptor antagonist,Calcium signaling pathway,20,47,45,ADRA1A|ADRA1B|ADRA1D|ADRB1|CACNA1I|CALM1|CHRM1|CHRM2|CHRM3|CHRM5|DRD1|DRD5|HRH1|HRH2|HTR2A|HTR2B|HTR2C|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+dopamine receptor antagonist,Serotonergic synapse,13,47,45,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR3A|HTR5A|HTR6|HTR7|SLC6A4,bbbc036_target_grounded_allowlist
+dopamine receptor antagonist,cAMP signaling pathway,13,47,45,ADRB1|CALM1|CHRM1|CHRM2|DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR6,bbbc036_target_grounded_allowlist
+dopamine receptor antagonist,Dopaminergic synapse,8,47,45,CALM1|DRD1|DRD2|DRD3|DRD4|DRD5|SCN1A|SLC6A3,bbbc036_target_grounded_allowlist
+dopamine receptor modulator,Neuroactive ligand-receptor interaction,14,1,14,ADRA2A|ADRA2B|ADRA2C|DRD1|DRD2|DRD3|DRD4|DRD5|HTR1A|HTR1B|HTR1D|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+dopamine receptor modulator,Serotonergic synapse,6,1,14,HTR1A|HTR1B|HTR1D|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+dopamine receptor modulator,cAMP signaling pathway,6,1,14,DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR1D,bbbc036_target_grounded_allowlist
+dopamine receptor modulator,Calcium signaling pathway,5,1,14,DRD1|DRD5|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+dopamine receptor modulator,Dopaminergic synapse,5,1,14,DRD1|DRD2|DRD3|DRD4|DRD5,bbbc036_target_grounded_allowlist
+dopamine receptor partial agonist,Neuroactive ligand-receptor interaction,4,1,4,CHRM1|DRD2|DRD3|HTR2A,bbbc036_target_grounded_allowlist
+dopamine receptor partial agonist,Calcium signaling pathway,2,1,4,CHRM1|HTR2A,bbbc036_target_grounded_allowlist
+dopamine receptor partial agonist,Dopaminergic synapse,2,1,4,DRD2|DRD3,bbbc036_target_grounded_allowlist
+dopamine receptor partial agonist,Gap junction,2,1,4,DRD2|HTR2A,bbbc036_target_grounded_allowlist
+dopamine receptor partial agonist,cAMP signaling pathway,2,1,4,CHRM1|DRD2,bbbc036_target_grounded_allowlist
+dopamine release enhancer,Steroid hormone biosynthesis,2,1,3,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+dopamine uptake inhibitor,Neuroactive ligand-receptor interaction,2,6,4,AGTR1|CHRNA3,bbbc036_target_grounded_allowlist
+egfr inhibitor,PI3K-Akt signaling pathway,5,21,9,CDK2|EGFR|ERBB2|JAK2|JAK3,bbbc036_target_grounded_allowlist
+egfr inhibitor,FoxO signaling pathway,4,21,9,CDK2|EGFR|MAPK14|STAT3,bbbc036_target_grounded_allowlist
+egfr inhibitor,Chemokine signaling pathway,3,21,9,JAK2|JAK3|STAT3,bbbc036_target_grounded_allowlist
+egfr inhibitor,MAPK signaling pathway,3,21,9,EGFR|ERBB2|MAPK14,bbbc036_target_grounded_allowlist
+egfr inhibitor,Calcium signaling pathway,2,21,9,EGFR|ERBB2,bbbc036_target_grounded_allowlist
+epidermal growth factor receptor (egfr) inhibitor,FoxO signaling pathway,2,2,2,CDK2|EGFR,bbbc036_target_grounded_allowlist
+epidermal growth factor receptor (egfr) inhibitor,PI3K-Akt signaling pathway,2,2,2,CDK2|EGFR,bbbc036_target_grounded_allowlist
+erbb2 inhibitor,Chemokine signaling pathway,3,1,4,JAK2|JAK3|STAT3,bbbc036_target_grounded_allowlist
+erbb2 inhibitor,PI3K-Akt signaling pathway,3,1,4,EGFR|JAK2|JAK3,bbbc036_target_grounded_allowlist
+erbb2 inhibitor,FoxO signaling pathway,2,1,4,EGFR|STAT3,bbbc036_target_grounded_allowlist
+estrogen receptor agonist,Vascular smooth muscle contraction,7,12,24,KCNMA1|PRKCA|PRKCB|PRKCD|PRKCE|PRKCG|PRKCQ,bbbc036_target_grounded_allowlist
+estrogen receptor agonist,Rap1 signaling pathway,5,12,24,PRKCA|PRKCB|PRKCG|PRKCI|PRKCZ,bbbc036_target_grounded_allowlist
+estrogen receptor agonist,Serotonergic synapse,5,12,24,CYP2C19|CYP2C8|PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+estrogen receptor agonist,Arachidonic acid metabolism,4,12,24,CYP2B6|CYP2C19|CYP2C8|CYP2E1,bbbc036_target_grounded_allowlist
+estrogen receptor agonist,Estrogen signaling pathway,4,12,24,ESR1|ESR2|GPER1|PRKCD,bbbc036_target_grounded_allowlist
+estrogen receptor antagonist,Vascular smooth muscle contraction,6,6,14,PRKCA|PRKCB|PRKCD|PRKCE|PRKCG|PRKCQ,bbbc036_target_grounded_allowlist
+estrogen receptor antagonist,Rap1 signaling pathway,5,6,14,PRKCA|PRKCB|PRKCG|PRKCI|PRKCZ,bbbc036_target_grounded_allowlist
+estrogen receptor antagonist,Estrogen signaling pathway,4,6,14,ESR1|ESR2|GPER1|PRKCD,bbbc036_target_grounded_allowlist
+estrogen receptor antagonist,Calcium signaling pathway,3,6,14,PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+estrogen receptor antagonist,Chemokine signaling pathway,3,6,14,PRKCB|PRKCD|PRKCZ,bbbc036_target_grounded_allowlist
+estrogen receptor modulator,Vascular smooth muscle contraction,6,1,13,PRKCA|PRKCB|PRKCD|PRKCE|PRKCG|PRKCQ,bbbc036_target_grounded_allowlist
+estrogen receptor modulator,Rap1 signaling pathway,5,1,13,PRKCA|PRKCB|PRKCG|PRKCI|PRKCZ,bbbc036_target_grounded_allowlist
+estrogen receptor modulator,Estrogen signaling pathway,4,1,13,ESR1|ESR2|GPER1|PRKCD,bbbc036_target_grounded_allowlist
+estrogen receptor modulator,Calcium signaling pathway,3,1,13,PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+estrogen receptor modulator,Chemokine signaling pathway,3,1,13,PRKCB|PRKCD|PRKCZ,bbbc036_target_grounded_allowlist
+faah inhibitor,Gap junction,2,3,4,DRD2|HTR2A,bbbc036_target_grounded_allowlist
+faah inhibitor,Neuroactive ligand-receptor interaction,2,3,4,DRD2|HTR2A,bbbc036_target_grounded_allowlist
+faah inhibitor,cAMP signaling pathway,2,3,4,DRD2|GPR119,bbbc036_target_grounded_allowlist
+faah transport inhibitor,Neuroactive ligand-receptor interaction,3,1,4,CNR1|CNR2|TRPV1,bbbc036_target_grounded_allowlist
+flt3 inhibitor,MAPK signaling pathway,4,2,4,CSF1R|FLT3|KIT|PDGFRB,bbbc036_target_grounded_allowlist
+flt3 inhibitor,PI3K-Akt signaling pathway,4,2,4,CSF1R|FLT3|KIT|PDGFRB,bbbc036_target_grounded_allowlist
+flt3 inhibitor,Ras signaling pathway,4,2,4,CSF1R|FLT3|KIT|PDGFRB,bbbc036_target_grounded_allowlist
+flt3 inhibitor,Rap1 signaling pathway,3,2,4,CSF1R|KIT|PDGFRB,bbbc036_target_grounded_allowlist
+gaba benzodiazepine site receptor inverse agonist,GABAergic synapse,2,2,2,GABRA1|GABRG2,bbbc036_target_grounded_allowlist
+gaba benzodiazepine site receptor inverse agonist,Neuroactive ligand-receptor interaction,2,2,2,GABRA1|GABRG2,bbbc036_target_grounded_allowlist
+gaba benzodiazepine site receptor partial agonist,GABAergic synapse,4,1,4,GABRA1|GABRA2|GABRA3|GABRA5,bbbc036_target_grounded_allowlist
+gaba benzodiazepine site receptor partial agonist,Neuroactive ligand-receptor interaction,4,1,4,GABRA1|GABRA2|GABRA3|GABRA5,bbbc036_target_grounded_allowlist
+gaba receptor agonist,GABAergic synapse,6,2,6,GABRA1|GABRA2|GABRA3|GABRA5|GABRB2|GABRG2,bbbc036_target_grounded_allowlist
+gaba receptor agonist,Neuroactive ligand-receptor interaction,6,2,6,GABRA1|GABRA2|GABRA3|GABRA5|GABRB2|GABRG2,bbbc036_target_grounded_allowlist
+gaba receptor antagonist,Neuroactive ligand-receptor interaction,3,11,3,ADRA1D|ADRA2A|GABRA1,bbbc036_target_grounded_allowlist
+gaba receptor antagonist,cGMP-PKG signaling pathway,2,11,3,ADRA1D|ADRA2A,bbbc036_target_grounded_allowlist
+gaba receptor modulator,Neuroactive ligand-receptor interaction,6,5,6,GABBR1|GABRA1|GABRA3|GABRA5|GABRA6|TSPO,bbbc036_target_grounded_allowlist
+gaba receptor modulator,GABAergic synapse,5,5,6,GABBR1|GABRA1|GABRA3|GABRA5|GABRA6,bbbc036_target_grounded_allowlist
+gaba receptor negative allosteric modulator,Steroid hormone biosynthesis,2,1,3,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+gastrin inhibitor,Calcium signaling pathway,2,1,3,CCKAR|CCKBR,bbbc036_target_grounded_allowlist
+gastrin inhibitor,Neuroactive ligand-receptor interaction,2,1,3,CCKAR|CCKBR,bbbc036_target_grounded_allowlist
+glucocorticoid receptor agonist,Arachidonic acid metabolism,2,18,12,PLA2G1B|PLA2G4A,bbbc036_target_grounded_allowlist
+glucocorticoid receptor agonist,Ras signaling pathway,2,18,12,PLA2G1B|PLA2G4A,bbbc036_target_grounded_allowlist
+glucocorticoid receptor agonist,Steroid hormone biosynthesis,2,18,12,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+glucocorticoid receptor agonist,Vascular smooth muscle contraction,2,18,12,PLA2G1B|PLA2G4A,bbbc036_target_grounded_allowlist
+glucocorticoid receptor antagonist,Ovarian steroidogenesis,2,2,6,CYP11A1|CYP19A1,bbbc036_target_grounded_allowlist
+glucocorticoid receptor antagonist,Steroid hormone biosynthesis,2,2,6,CYP11A1|CYP19A1,bbbc036_target_grounded_allowlist
+glutamate inhibitor,Adrenergic signaling in cardiomyocytes,2,1,15,SCN5A|SCN7A,bbbc036_target_grounded_allowlist
+glutamate receptor agonist,Glutamatergic synapse,4,2,4,GRIA2|GRIK1|GRM1|GRM4,bbbc036_target_grounded_allowlist
+glutamate receptor agonist,Neuroactive ligand-receptor interaction,4,2,4,GRIA2|GRIK1|GRM1|GRM4,bbbc036_target_grounded_allowlist
+glutamate receptor antagonist,Neuroactive ligand-receptor interaction,19,26,31,CHRNA2|CHRNA3|CHRNA4|CHRNA7|CHRNB2|CHRNB4|GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRM1|GRM4|GRM5|HTR1A|OPRD1|OPRK1|OPRM1,bbbc036_target_grounded_allowlist
+glutamate receptor antagonist,Glutamatergic synapse,9,26,31,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRM1|GRM4|GRM5,bbbc036_target_grounded_allowlist
+glutamate receptor antagonist,cAMP signaling pathway,9,26,31,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|HTR1A|RAC1|RAC2,bbbc036_target_grounded_allowlist
+glutamate receptor antagonist,Calcium signaling pathway,7,26,31,CHRNA7|GRIN1|GRIN2A|GRIN2C|GRIN2D|GRM1|GRM5,bbbc036_target_grounded_allowlist
+glutamate receptor antagonist,Cholinergic synapse,5,26,31,CHRNA3|CHRNA4|CHRNA7|CHRNB2|CHRNB4,bbbc036_target_grounded_allowlist
+glutamate receptor modulator,Steroid hormone biosynthesis,2,2,3,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+glycogen synthase kinase inhibitor,FoxO signaling pathway,9,8,24,AKT1|CCNB1|CDK2|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|SIRT1,bbbc036_target_grounded_allowlist
+glycogen synthase kinase inhibitor,Dopaminergic synapse,8,8,24,AKT1|GSK3A|GSK3B|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+glycogen synthase kinase inhibitor,MAPK signaling pathway,7,8,24,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+glycogen synthase kinase inhibitor,Adrenergic signaling in cardiomyocytes,6,8,24,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA,bbbc036_target_grounded_allowlist
+glycogen synthase kinase inhibitor,Chemokine signaling pathway,6,8,24,AKT1|GSK3A|GSK3B|MAPK1|PTK2B|ROCK1,bbbc036_target_grounded_allowlist
+gonadotropin releasing factor hormone receptor antagonist,Neuroactive ligand-receptor interaction,3,2,5,ADRA2A|GNRH1|GNRHR,bbbc036_target_grounded_allowlist
+growth hormone receptor agonist,Adrenergic signaling in cardiomyocytes,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+growth hormone receptor agonist,Estrogen signaling pathway,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+growth hormone receptor agonist,Gap junction,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+growth hormone receptor agonist,Glutamatergic synapse,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+growth hormone receptor agonist,Ovarian steroidogenesis,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+hdac inhibitor,Cell cycle,2,5,10,HDAC1|HDAC2,bbbc036_target_grounded_allowlist
+histamine receptor agonist,Neuroactive ligand-receptor interaction,4,8,24,HRH1|HRH2|HRH3|HRH4,bbbc036_target_grounded_allowlist
+histamine receptor agonist,cAMP signaling pathway,4,8,24,PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+histamine receptor agonist,Calcium signaling pathway,3,8,24,EGFR|HRH1|HRH2,bbbc036_target_grounded_allowlist
+histamine receptor agonist,Adrenergic signaling in cardiomyocytes,2,8,24,SCN5A|SCN7A,bbbc036_target_grounded_allowlist
+histamine receptor antagonist,Neuroactive ligand-receptor interaction,16,28,21,ADRA1A|ADRA1B|ADRA1D|CHRM1|CHRM2|CHRM3|DRD2|GRIN2B|HRH1|HRH2|HRH3|HRH4|HTR2A|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+histamine receptor antagonist,Calcium signaling pathway,12,28,21,ADRA1A|ADRA1B|ADRA1D|CHRM1|CHRM2|CHRM3|HRH1|HRH2|HTR2A|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+histamine receptor antagonist,Serotonergic synapse,5,28,21,HTR2A|HTR2C|HTR6|HTR7|SLC6A4,bbbc036_target_grounded_allowlist
+histamine receptor antagonist,cAMP signaling pathway,5,28,21,CHRM1|CHRM2|DRD2|GRIN2B|HTR6,bbbc036_target_grounded_allowlist
+histamine receptor antagonist,Adrenergic signaling in cardiomyocytes,3,28,21,ADRA1A|ADRA1B|ADRA1D,bbbc036_target_grounded_allowlist
+histamine receptor inhibitor,Neuroactive ligand-receptor interaction,3,1,3,GRIN2B|HRH3|HRH4,bbbc036_target_grounded_allowlist
+histamine receptor inverse agonist,Neuroactive ligand-receptor interaction,4,2,4,HRH1|HRH2|HRH3|HRH4,bbbc036_target_grounded_allowlist
+histamine receptor inverse agonist,Calcium signaling pathway,2,2,4,HRH1|HRH2,bbbc036_target_grounded_allowlist
+histone lyinse methyltransferase inhibitor,Cell cycle,2,1,2,CDK2|CDK4,bbbc036_target_grounded_allowlist
+histone lyinse methyltransferase inhibitor,PI3K-Akt signaling pathway,2,1,2,CDK2|CDK4,bbbc036_target_grounded_allowlist
+histone lyinse methyltransferase inhibitor,p53 signaling pathway,2,1,2,CDK2|CDK4,bbbc036_target_grounded_allowlist
+hiv integrase inhibitor,Apoptosis,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+hiv integrase inhibitor,Chemokine signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+hiv integrase inhibitor,FoxO signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+hiv integrase inhibitor,MAPK signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+hiv integrase inhibitor,PI3K-Akt signaling pathway,2,1,4,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+hmgcr inhibitor,Rap1 signaling pathway,2,5,6,ITGAL|ITGB2,bbbc036_target_grounded_allowlist
+hmgcr inhibitor,Regulation of actin cytoskeleton,2,5,6,ITGAL|ITGB2,bbbc036_target_grounded_allowlist
+hsp antagonist,Estrogen signaling pathway,2,1,2,HSP90AA1|HSP90AB1,bbbc036_target_grounded_allowlist
+hsp antagonist,PI3K-Akt signaling pathway,2,1,2,HSP90AA1|HSP90AB1,bbbc036_target_grounded_allowlist
+hsp inhibitor,Estrogen signaling pathway,2,2,2,HSP90AA1|HSP90AB1,bbbc036_target_grounded_allowlist
+hsp inhibitor,PI3K-Akt signaling pathway,2,2,2,HSP90AA1|HSP90AB1,bbbc036_target_grounded_allowlist
+imidazoline receptor agonist,Neuroactive ligand-receptor interaction,3,3,3,ADRA2A|ADRA2B|ADRA2C,bbbc036_target_grounded_allowlist
+imidazoline receptor agonist,cGMP-PKG signaling pathway,3,3,3,ADRA2A|ADRA2B|ADRA2C,bbbc036_target_grounded_allowlist
+immunosuppressant,Calcium signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+immunosuppressant,cGMP-PKG signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+immunosuppressant,Glutamatergic synapse,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+immunosuppressant,MAPK signaling pathway,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+immunosuppressant,Steroid hormone biosynthesis,2,1,13,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+insulin expression inhibitor,Calcium signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+insulin expression inhibitor,cGMP-PKG signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+insulin expression inhibitor,Glutamatergic synapse,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+insulin expression inhibitor,MAPK signaling pathway,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+insulin expression inhibitor,Steroid hormone biosynthesis,2,1,13,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+interleukin inhibitor,MAPK signaling pathway,2,3,3,IL1B|TNF,bbbc036_target_grounded_allowlist
+interleukin inhibitor,NF-kappa B signaling pathway,2,3,3,IL1B|TNF,bbbc036_target_grounded_allowlist
+ionotropic glutamate receptor antagonist,Neuroactive ligand-receptor interaction,3,3,3,GRIN2B|HRH3|HRH4,bbbc036_target_grounded_allowlist
+jak inhibitor,PI3K-Akt signaling pathway,4,3,5,EGFR|JAK1|JAK2|JAK3,bbbc036_target_grounded_allowlist
+jak inhibitor,Chemokine signaling pathway,3,3,5,JAK2|JAK3|STAT3,bbbc036_target_grounded_allowlist
+jak inhibitor,FoxO signaling pathway,2,3,5,EGFR|STAT3,bbbc036_target_grounded_allowlist
+jak2 inhibitor,Chemokine signaling pathway,3,1,4,JAK2|JAK3|STAT3,bbbc036_target_grounded_allowlist
+jak2 inhibitor,PI3K-Akt signaling pathway,3,1,4,EGFR|JAK2|JAK3,bbbc036_target_grounded_allowlist
+jak2 inhibitor,FoxO signaling pathway,2,1,4,EGFR|STAT3,bbbc036_target_grounded_allowlist
+jnk inhibitor,FoxO signaling pathway,4,2,12,CDK2|MAPK10|MAPK8|MAPK9,bbbc036_target_grounded_allowlist
+jnk inhibitor,MAPK signaling pathway,4,2,12,MAPK10|MAPK8|MAPK8IP1|MAPK9,bbbc036_target_grounded_allowlist
+jnk inhibitor,Ras signaling pathway,4,2,12,MAPK10|MAPK8|MAPK9|ZAP70,bbbc036_target_grounded_allowlist
+jnk inhibitor,cAMP signaling pathway,4,2,12,CFTR|MAPK10|MAPK8|MAPK9,bbbc036_target_grounded_allowlist
+jnk inhibitor,Apoptosis,3,2,12,MAPK10|MAPK8|MAPK9,bbbc036_target_grounded_allowlist
+kit inhibitor,Ras signaling pathway,6,1,13,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+kit inhibitor,MAPK signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+kit inhibitor,PI3K-Akt signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+kit inhibitor,Calcium signaling pathway,4,1,13,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+kit inhibitor,Rap1 signaling pathway,4,1,13,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+l-type calcium channel blocker,MAPK signaling pathway,11,2,23,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+l-type calcium channel blocker,Adrenergic signaling in cardiomyocytes,10,2,23,ATP2A2|CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4|SCN5A,bbbc036_target_grounded_allowlist
+l-type calcium channel blocker,Calcium signaling pathway,8,2,23,ATP2A2|CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S,bbbc036_target_grounded_allowlist
+l-type calcium channel blocker,cAMP signaling pathway,5,2,23,ATP2A2|CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+l-type calcium channel blocker,cGMP-PKG signaling pathway,5,2,23,ATP2A2|CACNA1C|CACNA1D|CACNA1F|CACNA1S,bbbc036_target_grounded_allowlist
+large conductance potassium channel activator,Vascular smooth muscle contraction,2,1,4,KCNMA1|KCNU1,bbbc036_target_grounded_allowlist
+large conductance potassium channel activator,cGMP-PKG signaling pathway,2,1,4,KCNMA1|KCNU1,bbbc036_target_grounded_allowlist
+leucine rich repeat kinase inhibitor,Dopaminergic synapse,7,1,14,AKT1|GSK3B|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+leucine rich repeat kinase inhibitor,FoxO signaling pathway,7,1,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|SIRT1,bbbc036_target_grounded_allowlist
+leucine rich repeat kinase inhibitor,MAPK signaling pathway,7,1,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+leucine rich repeat kinase inhibitor,Adrenergic signaling in cardiomyocytes,6,1,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA,bbbc036_target_grounded_allowlist
+leucine rich repeat kinase inhibitor,ErbB signaling pathway,6,1,14,AKT1|GSK3B|MAPK1|MAPK8|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+leukotriene receptor antagonist,cAMP signaling pathway,6,5,19,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+leukotriene receptor antagonist,Calcium signaling pathway,2,5,19,CYSLTR1|HRH1,bbbc036_target_grounded_allowlist
+leukotriene receptor antagonist,NF-kappa B signaling pathway,2,5,19,IL1B|TLR4,bbbc036_target_grounded_allowlist
+leukotriene receptor antagonist,Neuroactive ligand-receptor interaction,2,5,19,CYSLTR1|HRH1,bbbc036_target_grounded_allowlist
+leukotriene receptor antagonist,PI3K-Akt signaling pathway,2,5,19,IL6|TLR4,bbbc036_target_grounded_allowlist
+lipocortin synthesis stimulant,Chemokine signaling pathway,2,1,2,JAK2|STAT3,bbbc036_target_grounded_allowlist
+lipoxygenase inhibitor,Arachidonic acid metabolism,2,4,2,ALOX12|ALOX5,bbbc036_target_grounded_allowlist
+lipoxygenase inhibitor,Serotonergic synapse,2,4,2,ALOX12|ALOX5,bbbc036_target_grounded_allowlist
+local anesthetic,Adrenergic signaling in cardiomyocytes,2,8,10,SCN5A|SCN7A,bbbc036_target_grounded_allowlist
+lxr agonist,Estrogen signaling pathway,2,3,10,NCOA1|NCOA2,bbbc036_target_grounded_allowlist
+lxr agonist,PPAR signaling pathway,2,3,10,NR1H3|RXRB,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor inhibitor,cAMP signaling pathway,6,1,13,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor inhibitor,NF-kappa B signaling pathway,2,1,13,IL1B|TLR4,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor inhibitor,PI3K-Akt signaling pathway,2,1,13,IL6|TLR4,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor inhibitor,cGMP-PKG signaling pathway,2,1,13,PDE3A|PDE5A,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor modulator,cAMP signaling pathway,6,1,13,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor modulator,NF-kappa B signaling pathway,2,1,13,IL1B|TLR4,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor modulator,PI3K-Akt signaling pathway,2,1,13,IL6|TLR4,bbbc036_target_grounded_allowlist
+macrophage migration inhibiting factor modulator,cGMP-PKG signaling pathway,2,1,13,PDE3A|PDE5A,bbbc036_target_grounded_allowlist
+map kinase inhibitor,MAPK signaling pathway,2,1,5,MKNK1|MKNK2,bbbc036_target_grounded_allowlist
+"mapk-interacting kinase inhibitor,",MAPK signaling pathway,2,1,5,MKNK1|MKNK2,bbbc036_target_grounded_allowlist
+mediator release inhibitor,cAMP signaling pathway,6,2,14,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+mediator release inhibitor,NF-kappa B signaling pathway,3,2,14,IL1B|SYK|TLR4,bbbc036_target_grounded_allowlist
+mediator release inhibitor,PI3K-Akt signaling pathway,3,2,14,IL6|SYK|TLR4,bbbc036_target_grounded_allowlist
+mediator release inhibitor,cGMP-PKG signaling pathway,2,2,14,PDE3A|PDE5A,bbbc036_target_grounded_allowlist
+mek inhibitor,MAPK signaling pathway,12,5,20,AKT1|CHUK|MAP2K1|MAP2K2|MAP2K7|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA|RAF1,bbbc036_target_grounded_allowlist
+mek inhibitor,FoxO signaling pathway,11,5,20,AKT1|CHUK|MAP2K1|MAP2K2|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|RAF1|SGK1,bbbc036_target_grounded_allowlist
+mek inhibitor,ErbB signaling pathway,10,5,20,AKT1|GSK3B|MAP2K1|MAP2K2|MAP2K7|MAPK1|MAPK8|PRKCA|RAF1|RPS6KB1,bbbc036_target_grounded_allowlist
+mek inhibitor,PI3K-Akt signaling pathway,10,5,20,AKT1|CHUK|GSK3B|MAP2K1|MAP2K2|MAPK1|PRKCA|RAF1|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+mek inhibitor,mTOR signaling pathway,10,5,20,AKT1|CHUK|GSK3B|MAP2K1|MAP2K2|MAPK1|PRKCA|RAF1|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+melatonin receptor agonist,Neuroactive ligand-receptor interaction,2,1,2,MTNR1A|MTNR1B,bbbc036_target_grounded_allowlist
+melatonin receptor antagonist,Neuroactive ligand-receptor interaction,2,2,2,MTNR1A|MTNR1B,bbbc036_target_grounded_allowlist
+microtubule formation inhibitor,Apoptosis,2,1,6,JUN|TUBA1A,bbbc036_target_grounded_allowlist
+microtubule formation inhibitor,Gap junction,2,1,6,TUBA1A|TUBB,bbbc036_target_grounded_allowlist
+microtubule inhibitor,Gap junction,16,4,20,TUBA1A|TUBA1B|TUBA1C|TUBA3C|TUBA3D|TUBA3E|TUBA4A|TUBB|TUBB1|TUBB2A|TUBB2B|TUBB3|TUBB4A|TUBB4B|TUBB6|TUBB8,bbbc036_target_grounded_allowlist
+microtubule inhibitor,Apoptosis,7,4,20,TUBA1A|TUBA1B|TUBA1C|TUBA3C|TUBA3D|TUBA3E|TUBA4A,bbbc036_target_grounded_allowlist
+microtubule inhibitor,Neuroactive ligand-receptor interaction,2,4,20,GLRA1|GLRA2,bbbc036_target_grounded_allowlist
+microtubule stabilizing agent,Gap junction,2,1,10,TUBB|TUBB1,bbbc036_target_grounded_allowlist
+microtubule stabilizing agent,NF-kappa B signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+microtubule stabilizing agent,PI3K-Akt signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+microtubule stimulant,Gap junction,2,1,10,TUBB|TUBB1,bbbc036_target_grounded_allowlist
+microtubule stimulant,NF-kappa B signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+microtubule stimulant,PI3K-Akt signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+monoamine oxidase inhibitor,Dopaminergic synapse,2,7,3,MAOA|MAOB,bbbc036_target_grounded_allowlist
+monoamine oxidase inhibitor,Serotonergic synapse,2,7,3,MAOA|MAOB,bbbc036_target_grounded_allowlist
+mtor inhibitor,FoxO signaling pathway,10,5,21,AKT1|MAPK1|MAPK11|MAPK12|MAPK8|PIK3CA|PIK3CB|PIK3CD|PLK1|SGK1,bbbc036_target_grounded_allowlist
+mtor inhibitor,PI3K-Akt signaling pathway,10,5,21,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3CG|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+mtor inhibitor,ErbB signaling pathway,9,5,21,AKT1|MAPK1|MAPK8|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+mtor inhibitor,mTOR signaling pathway,9,5,21,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+mtor inhibitor,Focal adhesion,8,5,21,AKT1|MAPK1|MAPK8|PIK3CA|PIK3CB|PIK3CD|PRKCA|ROCK1,bbbc036_target_grounded_allowlist
+myosin light chain kinase inhibitor,cGMP-PKG signaling pathway,2,2,2,MYLK|TRPC6,bbbc036_target_grounded_allowlist
+neurotransmitter agonist,Cholinergic synapse,4,1,4,KCNQ2|KCNQ3|KCNQ4|KCNQ5,bbbc036_target_grounded_allowlist
+nfkb pathway inhibitor,Apoptosis,4,5,8,CHUK|IKBKB|MAP2K1|RELA,bbbc036_target_grounded_allowlist
+nfkb pathway inhibitor,Chemokine signaling pathway,4,5,8,CHUK|IKBKB|MAP2K1|RELA,bbbc036_target_grounded_allowlist
+nfkb pathway inhibitor,MAPK signaling pathway,4,5,8,CHUK|IKBKB|MAP2K1|RELA,bbbc036_target_grounded_allowlist
+nfkb pathway inhibitor,PI3K-Akt signaling pathway,4,5,8,CHUK|IKBKB|MAP2K1|RELA,bbbc036_target_grounded_allowlist
+nfkb pathway inhibitor,Ras signaling pathway,4,5,8,CHUK|IKBKB|MAP2K1|RELA,bbbc036_target_grounded_allowlist
+nitric oxide synthase inhibitor,cAMP signaling pathway,6,4,13,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+nitric oxide synthase inhibitor,NF-kappa B signaling pathway,2,4,13,IL1B|TLR4,bbbc036_target_grounded_allowlist
+nitric oxide synthase inhibitor,PI3K-Akt signaling pathway,2,4,13,IL6|TLR4,bbbc036_target_grounded_allowlist
+nitric oxide synthase inhibitor,cGMP-PKG signaling pathway,2,4,13,PDE3A|PDE5A,bbbc036_target_grounded_allowlist
+norepinephrine reputake inhibitor,Neuroactive ligand-receptor interaction,41,3,49,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|DRD1|DRD2|DRD3|DRD4|DRD5|GABRA1|GABRA2|GABRA3|GABRA4|GABRA5|GABRA6|GABRB1|GABRB2|GABRB3|GABRD|GABRE|GABRG1|GABRG2|GABRG3|GABRP|GABRQ|HRH1|HRH4|HTR1A|HTR1B|HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+norepinephrine reputake inhibitor,GABAergic synapse,16,3,49,GABRA1|GABRA2|GABRA3|GABRA4|GABRA5|GABRA6|GABRB1|GABRB2|GABRB3|GABRD|GABRE|GABRG1|GABRG2|GABRG3|GABRP|GABRQ,bbbc036_target_grounded_allowlist
+norepinephrine reputake inhibitor,Calcium signaling pathway,15,3,49,ADRA1A|ADRA1B|ADRA1D|CHRM1|CHRM2|CHRM3|CHRM5|DRD1|DRD5|HRH1|HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+norepinephrine reputake inhibitor,Serotonergic synapse,13,3,49,GABRB1|GABRB2|GABRB3|HTR1A|HTR1B|HTR2A|HTR2B|HTR2C|HTR3A|HTR6|HTR7|KCND2|SLC6A4,bbbc036_target_grounded_allowlist
+norepinephrine reputake inhibitor,cAMP signaling pathway,8,3,49,CHRM1|CHRM2|DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR6,bbbc036_target_grounded_allowlist
+norepinephrine transporter inhibitor,Glutamatergic synapse,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+norepinephrine transporter inhibitor,Neuroactive ligand-receptor interaction,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+norepinephrine transporter inhibitor,cAMP signaling pathway,7,2,10,GRIN1|GRIN2A|GRIN2B|GRIN2C|GRIN2D|GRIN3A|GRIN3B,bbbc036_target_grounded_allowlist
+norepinephrine transporter inhibitor,Calcium signaling pathway,4,2,10,GRIN1|GRIN2A|GRIN2C|GRIN2D,bbbc036_target_grounded_allowlist
+norepinephrine transporter inhibitor,Dopaminergic synapse,3,2,10,GRIN2A|GRIN2B|SLC6A3,bbbc036_target_grounded_allowlist
+nucelar factor of activated t-cells inhibitor,Neuroactive ligand-receptor interaction,3,1,4,CNR1|CNR2|TRPV1,bbbc036_target_grounded_allowlist
+opioid receptor agonist,Neuroactive ligand-receptor interaction,5,11,9,OPRD1|OPRK1|OPRM1|POMC|UTS2R,bbbc036_target_grounded_allowlist
+opioid receptor agonist,Estrogen signaling pathway,3,11,9,CALM1|OPRM1|POMC,bbbc036_target_grounded_allowlist
+opioid receptor agonist,Calcium signaling pathway,2,11,9,CACNA1A|CALM1,bbbc036_target_grounded_allowlist
+opioid receptor agonist,Dopaminergic synapse,2,11,9,CACNA1A|CALM1,bbbc036_target_grounded_allowlist
+opioid receptor agonist,Serotonergic synapse,2,11,9,CACNA1A|CYP2D6,bbbc036_target_grounded_allowlist
+opioid receptor antagonist,Neuroactive ligand-receptor interaction,4,8,4,OPRD1|OPRK1|OPRL1|OPRM1,bbbc036_target_grounded_allowlist
+orexin receptor antagonist,Neuroactive ligand-receptor interaction,2,1,2,HCRTR1|HCRTR2,bbbc036_target_grounded_allowlist
+oxytocin receptor antagonist,Neuroactive ligand-receptor interaction,4,1,4,AVPR1A|AVPR2|OXT|OXTR,bbbc036_target_grounded_allowlist
+oxytocin receptor antagonist,Calcium signaling pathway,2,1,4,AVPR1A|OXTR,bbbc036_target_grounded_allowlist
+oxytocin receptor antagonist,cAMP signaling pathway,2,1,4,OXT|OXTR,bbbc036_target_grounded_allowlist
+p glycoprotein inhibitor,Gap junction,2,1,10,TUBB|TUBB1,bbbc036_target_grounded_allowlist
+p glycoprotein inhibitor,NF-kappa B signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+p glycoprotein inhibitor,PI3K-Akt signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+p38 mapk inhibitor,MAPK signaling pathway,12,7,25,AKT1|MAPK1|MAPK10|MAPK11|MAPK12|MAPK14|MAPK8|MAPK9|PRKCA|RAF1|TGFBR1|TNF,bbbc036_target_grounded_allowlist
+p38 mapk inhibitor,FoxO signaling pathway,11,7,25,AKT1|MAPK1|MAPK10|MAPK11|MAPK12|MAPK14|MAPK8|MAPK9|RAF1|SGK1|TGFBR1,bbbc036_target_grounded_allowlist
+p38 mapk inhibitor,ErbB signaling pathway,10,7,25,AKT1|GSK3B|MAPK1|MAPK10|MAPK8|MAPK9|PRKCA|RAF1|RPS6KB1|SRC,bbbc036_target_grounded_allowlist
+p38 mapk inhibitor,Focal adhesion,10,7,25,AKT1|GSK3B|MAPK1|MAPK10|MAPK8|MAPK9|PRKCA|RAF1|ROCK1|SRC,bbbc036_target_grounded_allowlist
+p38 mapk inhibitor,Dopaminergic synapse,9,7,25,AKT1|GSK3B|MAPK10|MAPK11|MAPK12|MAPK14|MAPK8|MAPK9|PRKCA,bbbc036_target_grounded_allowlist
+partial serotonin receptor agonist,Neuroactive ligand-receptor interaction,6,1,6,DRD1|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+partial serotonin receptor agonist,Serotonergic synapse,5,1,6,HTR1E|HTR1F|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+partial serotonin receptor agonist,Calcium signaling pathway,4,1,6,DRD1|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+partial serotonin receptor agonist,Gap junction,4,1,6,DRD1|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+partial serotonin receptor agonist,cAMP signaling pathway,3,1,6,DRD1|HTR1E|HTR1F,bbbc036_target_grounded_allowlist
+pdgfr tyrosine kinase receptor inhibitor,Ras signaling pathway,6,1,13,ABL1|CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+pdgfr tyrosine kinase receptor inhibitor,MAPK signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+pdgfr tyrosine kinase receptor inhibitor,PI3K-Akt signaling pathway,5,1,13,CSF1R|KIT|NTRK1|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+pdgfr tyrosine kinase receptor inhibitor,Calcium signaling pathway,4,1,13,NTRK1|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+pdgfr tyrosine kinase receptor inhibitor,Rap1 signaling pathway,4,1,13,CSF1R|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+phosphodiesterase inhibitor,cAMP signaling pathway,14,23,43,AKT1|MAPK1|MAPK8|PDE10A|PDE3A|PDE3B|PDE4A|PDE4B|PDE4C|PDE4D|PIK3CA|PIK3CB|PIK3CD|ROCK1,bbbc036_target_grounded_allowlist
+phosphodiesterase inhibitor,PI3K-Akt signaling pathway,12,23,43,AKT1|IL6|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3CG|PRKCA|RPS6KB1|SGK1|TLR4,bbbc036_target_grounded_allowlist
+phosphodiesterase inhibitor,FoxO signaling pathway,11,23,43,AKT1|IL6|MAPK1|MAPK11|MAPK12|MAPK8|PIK3CA|PIK3CB|PIK3CD|PLK1|SGK1,bbbc036_target_grounded_allowlist
+phosphodiesterase inhibitor,ErbB signaling pathway,9,23,43,AKT1|MAPK1|MAPK8|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+phosphodiesterase inhibitor,mTOR signaling pathway,9,23,43,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+phosphokinase stimulant,Adrenergic signaling in cardiomyocytes,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+phosphokinase stimulant,Estrogen signaling pathway,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+phosphokinase stimulant,Gap junction,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+phosphokinase stimulant,Glutamatergic synapse,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+phosphokinase stimulant,Ovarian steroidogenesis,3,1,3,ADCY2|ADCY5|GNAS,bbbc036_target_grounded_allowlist
+pi3k inhibitor,FoxO signaling pathway,11,4,24,AKT1|MAPK1|MAPK11|MAPK12|MAPK8|PIK3CA|PIK3CB|PIK3CD|PIK3R1|PLK1|SGK1,bbbc036_target_grounded_allowlist
+pi3k inhibitor,PI3K-Akt signaling pathway,11,4,24,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3CG|PIK3R1|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+pi3k inhibitor,ErbB signaling pathway,10,4,24,AKT1|MAPK1|MAPK8|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3R1|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+pi3k inhibitor,mTOR signaling pathway,10,4,24,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3R1|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+pi3k inhibitor,Focal adhesion,9,4,24,AKT1|MAPK1|MAPK8|PIK3CA|PIK3CB|PIK3CD|PIK3R1|PRKCA|ROCK1,bbbc036_target_grounded_allowlist
+pkc activator,Adrenergic signaling in cardiomyocytes,2,2,5,ATP2A1|PRKCA,bbbc036_target_grounded_allowlist
+pkc activator,Calcium signaling pathway,2,2,5,ATP2A1|PRKCA,bbbc036_target_grounded_allowlist
+pkc inhibitor,Rap1 signaling pathway,10,8,28,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA|PRKCB|PRKCG|PRKCI|PRKCZ,bbbc036_target_grounded_allowlist
+pkc inhibitor,Dopaminergic synapse,9,8,28,AKT1|GSK3B|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+pkc inhibitor,Focal adhesion,9,8,28,AKT1|GSK3B|MAPK1|MAPK8|PDPK1|PRKCA|PRKCB|PRKCG|ROCK1,bbbc036_target_grounded_allowlist
+pkc inhibitor,MAPK signaling pathway,9,8,28,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+pkc inhibitor,ErbB signaling pathway,8,8,28,AKT1|GSK3B|MAPK1|MAPK8|PRKCA|PRKCB|PRKCG|RPS6KB1,bbbc036_target_grounded_allowlist
+platelet aggregation inhibitor,Arachidonic acid metabolism,2,2,3,CYP2B6|CYP2C19,bbbc036_target_grounded_allowlist
+plk inhibitor,FoxO signaling pathway,11,2,19,AKT1|MAPK1|MAPK11|MAPK12|MAPK8|PIK3CA|PIK3CB|PIK3CD|PLK1|PLK3|SGK1,bbbc036_target_grounded_allowlist
+plk inhibitor,PI3K-Akt signaling pathway,10,2,19,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PIK3CG|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+plk inhibitor,ErbB signaling pathway,9,2,19,AKT1|MAPK1|MAPK8|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+plk inhibitor,mTOR signaling pathway,9,2,19,AKT1|MAPK1|MTOR|PIK3CA|PIK3CB|PIK3CD|PRKCA|RPS6KB1|SGK1,bbbc036_target_grounded_allowlist
+plk inhibitor,Focal adhesion,8,2,19,AKT1|MAPK1|MAPK8|PIK3CA|PIK3CB|PIK3CD|PRKCA|ROCK1,bbbc036_target_grounded_allowlist
+polarization inhibitor,Neuroactive ligand-receptor interaction,4,1,5,GLRA1|GLRA2|GLRB|HTR4,bbbc036_target_grounded_allowlist
+polarization inhibitor,Serotonergic synapse,2,1,5,HTR3A|HTR4,bbbc036_target_grounded_allowlist
+potassium channel blocker,Cholinergic synapse,5,9,25,KCNQ1|KCNQ2|KCNQ3|KCNQ4|KCNQ5,bbbc036_target_grounded_allowlist
+potassium channel blocker,Neuroactive ligand-receptor interaction,4,9,25,CNR1|CNR2|GLRA1|TRPV1,bbbc036_target_grounded_allowlist
+potassium channel blocker,Calcium signaling pathway,3,9,25,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+potassium channel blocker,MAPK signaling pathway,3,9,25,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+ppar receptor agonist,PPAR signaling pathway,3,10,8,PPARA|PPARD|PPARG,bbbc036_target_grounded_allowlist
+ppar receptor agonist,AMPK signaling pathway,2,10,8,INS|PPARG,bbbc036_target_grounded_allowlist
+ppar receptor agonist,Arachidonic acid metabolism,2,10,8,PTGS1|PTGS2,bbbc036_target_grounded_allowlist
+ppar receptor agonist,Ovarian steroidogenesis,2,10,8,INS|PTGS2,bbbc036_target_grounded_allowlist
+ppar receptor agonist,Serotonergic synapse,2,10,8,PTGS1|PTGS2,bbbc036_target_grounded_allowlist
+ppar receptor antagonist,PPAR signaling pathway,2,4,3,PPARA|PPARG,bbbc036_target_grounded_allowlist
+progesterone receptor agonist,Steroid hormone biosynthesis,2,5,3,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+prolactin inhibitor,Neuroactive ligand-receptor interaction,13,1,14,ADRA1A|ADRB1|DRD1|DRD2|DRD3|DRD4|DRD5|HTR1A|HTR2A|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+prolactin inhibitor,Calcium signaling pathway,9,1,14,ADRA1A|ADRB1|DRD1|DRD5|HTR2A|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+prolactin inhibitor,Serotonergic synapse,7,1,14,HTR1A|HTR2A|HTR3A|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+prolactin inhibitor,cAMP signaling pathway,7,1,14,ADRB1|DRD1|DRD2|DRD5|HTR1A|HTR4|HTR6,bbbc036_target_grounded_allowlist
+prolactin inhibitor,Dopaminergic synapse,5,1,14,DRD1|DRD2|DRD3|DRD4|DRD5,bbbc036_target_grounded_allowlist
+prostanoid receptor agonist,Neuroactive ligand-receptor interaction,7,3,12,PTGDR|PTGER1|PTGER2|PTGER3|PTGER4|PTGFR|TBXA2R,bbbc036_target_grounded_allowlist
+prostanoid receptor agonist,Calcium signaling pathway,4,3,12,PTGER1|PTGER3|PTGFR|TBXA2R,bbbc036_target_grounded_allowlist
+prostanoid receptor agonist,cAMP signaling pathway,2,3,12,PTGER2|PTGER3,bbbc036_target_grounded_allowlist
+protein phosphatase inhibitor,Adrenergic signaling in cardiomyocytes,3,2,3,PPP1CA|PPP1CC|PPP2CA,bbbc036_target_grounded_allowlist
+protein phosphatase inhibitor,Dopaminergic synapse,3,2,3,PPP1CA|PPP1CC|PPP2CA,bbbc036_target_grounded_allowlist
+protein phosphatase inhibitor,Focal adhesion,2,2,3,PPP1CA|PPP1CC,bbbc036_target_grounded_allowlist
+protein phosphatase inhibitor,Regulation of actin cytoskeleton,2,2,3,PPP1CA|PPP1CC,bbbc036_target_grounded_allowlist
+protein phosphatase inhibitor,Vascular smooth muscle contraction,2,2,3,PPP1CA|PPP1CC,bbbc036_target_grounded_allowlist
+protein synthesis inhibitor,Endocytosis,5,12,20,ARF1|ARFGEF1|ARFGEF2|CYTH2|GBF1,bbbc036_target_grounded_allowlist
+purinergic receptor antagonist,Adrenergic signaling in cardiomyocytes,7,2,17,AKT1|CAMK2A|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA,bbbc036_target_grounded_allowlist
+purinergic receptor antagonist,Dopaminergic synapse,7,2,17,AKT1|CAMK2A|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+purinergic receptor antagonist,FoxO signaling pathway,7,2,17,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|SGK1,bbbc036_target_grounded_allowlist
+purinergic receptor antagonist,MAPK signaling pathway,7,2,17,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+purinergic receptor antagonist,ErbB signaling pathway,6,2,17,AKT1|CAMK2A|MAPK1|MAPK8|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+raf inhibitor,FoxO signaling pathway,3,1,4,BRAF|MAPK14|RAF1,bbbc036_target_grounded_allowlist
+raf inhibitor,MAPK signaling pathway,3,1,4,BRAF|MAPK14|RAF1,bbbc036_target_grounded_allowlist
+raf inhibitor,Rap1 signaling pathway,3,1,4,BRAF|MAPK14|RAF1,bbbc036_target_grounded_allowlist
+raf inhibitor,Chemokine signaling pathway,2,1,4,BRAF|RAF1,bbbc036_target_grounded_allowlist
+raf inhibitor,ErbB signaling pathway,2,1,4,BRAF|RAF1,bbbc036_target_grounded_allowlist
+receptor tyrosine protein kinase inhibitor,Calcium signaling pathway,2,1,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+receptor tyrosine protein kinase inhibitor,Focal adhesion,2,1,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+receptor tyrosine protein kinase inhibitor,MAPK signaling pathway,2,1,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+receptor tyrosine protein kinase inhibitor,PI3K-Akt signaling pathway,2,1,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+rho associated kinase inhibitor,Vascular smooth muscle contraction,4,4,6,PRKACA|PRKCE|ROCK1|ROCK2,bbbc036_target_grounded_allowlist
+rho associated kinase inhibitor,Chemokine signaling pathway,3,4,6,PRKACA|ROCK1|ROCK2,bbbc036_target_grounded_allowlist
+rho associated kinase inhibitor,cAMP signaling pathway,3,4,6,PRKACA|ROCK1|ROCK2,bbbc036_target_grounded_allowlist
+rho associated kinase inhibitor,cGMP-PKG signaling pathway,3,4,6,PRKCE|ROCK1|ROCK2,bbbc036_target_grounded_allowlist
+rho associated kinase inhibitor,Focal adhesion,2,4,6,ROCK1|ROCK2,bbbc036_target_grounded_allowlist
+ribonucleotide reductase inhibitor,p53 signaling pathway,2,2,11,RRM2|RRM2B,bbbc036_target_grounded_allowlist
+ror inverse agonist,Estrogen signaling pathway,2,1,9,NCOA1|NCOA2,bbbc036_target_grounded_allowlist
+ror inverse agonist,PPAR signaling pathway,2,1,9,NR1H3|RXRB,bbbc036_target_grounded_allowlist
+selective estrogen receptor modulator (serm),Vascular smooth muscle contraction,6,2,13,PRKCA|PRKCB|PRKCD|PRKCE|PRKCG|PRKCQ,bbbc036_target_grounded_allowlist
+selective estrogen receptor modulator (serm),Rap1 signaling pathway,5,2,13,PRKCA|PRKCB|PRKCG|PRKCI|PRKCZ,bbbc036_target_grounded_allowlist
+selective estrogen receptor modulator (serm),Estrogen signaling pathway,4,2,13,ESR1|ESR2|GPER1|PRKCD,bbbc036_target_grounded_allowlist
+selective estrogen receptor modulator (serm),Calcium signaling pathway,3,2,13,PRKCA|PRKCB|PRKCG,bbbc036_target_grounded_allowlist
+selective estrogen receptor modulator (serm),Chemokine signaling pathway,3,2,13,PRKCB|PRKCD|PRKCZ,bbbc036_target_grounded_allowlist
+selective serotonin reuptake inhibitor (ssri),Neuroactive ligand-receptor interaction,6,4,9,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|HTR2A,bbbc036_target_grounded_allowlist
+selective serotonin reuptake inhibitor (ssri),Calcium signaling pathway,5,4,9,CHRM1|CHRM2|CHRM3|CHRM5|HTR2A,bbbc036_target_grounded_allowlist
+selective serotonin reuptake inhibitor (ssri),Cholinergic synapse,5,4,9,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+selective serotonin reuptake inhibitor (ssri),Regulation of actin cytoskeleton,5,4,9,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+selective serotonin reuptake inhibitor (ssri),Serotonergic synapse,3,4,9,CYP2C19|HTR2A|SLC6A4,bbbc036_target_grounded_allowlist
+serotonin receptor agonist,Serotonergic synapse,14,27,17,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR3A|HTR3B|HTR6|HTR7|MAOA|MAOB,bbbc036_target_grounded_allowlist
+serotonin receptor agonist,Neuroactive ligand-receptor interaction,12,27,17,ADRA2A|DRD2|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin receptor agonist,cAMP signaling pathway,7,27,17,DRD2|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR6,bbbc036_target_grounded_allowlist
+serotonin receptor agonist,Calcium signaling pathway,5,27,17,HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin receptor agonist,Gap junction,4,27,17,DRD2|HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+serotonin receptor antagonist,Neuroactive ligand-receptor interaction,36,45,41,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|DRD1|DRD2|DRD3|DRD4|DRD5|GABRA1|GLRA1|GLRA2|GLRB|HRH1|HRH2|HRH4|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin receptor antagonist,Calcium signaling pathway,19,45,41,ADRA1A|ADRA1B|ADRA1D|ADRB1|CHRM1|CHRM2|CHRM3|CHRM5|DRD1|DRD5|HRH1|HRH2|HTR2A|HTR2B|HTR2C|HTR4|HTR5A|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin receptor antagonist,Serotonergic synapse,14,45,41,HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR2A|HTR2B|HTR2C|HTR3A|HTR4|HTR5A|HTR6|HTR7|SLC6A4,bbbc036_target_grounded_allowlist
+serotonin receptor antagonist,cAMP signaling pathway,13,45,41,ADRB1|CHRM1|CHRM2|DRD1|DRD2|DRD5|HTR1A|HTR1B|HTR1D|HTR1E|HTR1F|HTR4|HTR6,bbbc036_target_grounded_allowlist
+serotonin receptor antagonist,cGMP-PKG signaling pathway,7,45,41,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|ADRB1,bbbc036_target_grounded_allowlist
+serotonin receptor inverse agonist,Neuroactive ligand-receptor interaction,4,1,4,CHRM1|DRD2|DRD3|HTR2A,bbbc036_target_grounded_allowlist
+serotonin receptor inverse agonist,Calcium signaling pathway,2,1,4,CHRM1|HTR2A,bbbc036_target_grounded_allowlist
+serotonin receptor inverse agonist,Dopaminergic synapse,2,1,4,DRD2|DRD3,bbbc036_target_grounded_allowlist
+serotonin receptor inverse agonist,Gap junction,2,1,4,DRD2|HTR2A,bbbc036_target_grounded_allowlist
+serotonin receptor inverse agonist,cAMP signaling pathway,2,1,4,CHRM1|DRD2,bbbc036_target_grounded_allowlist
+serotonin receptor partial agonist,Neuroactive ligand-receptor interaction,5,4,5,HTR1A|HTR2A|HTR2B|HTR2C|HTR4,bbbc036_target_grounded_allowlist
+serotonin receptor partial agonist,Serotonergic synapse,5,4,5,HTR1A|HTR2A|HTR2B|HTR2C|HTR4,bbbc036_target_grounded_allowlist
+serotonin receptor partial agonist,Calcium signaling pathway,4,4,5,HTR2A|HTR2B|HTR2C|HTR4,bbbc036_target_grounded_allowlist
+serotonin receptor partial agonist,Gap junction,3,4,5,HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+serotonin receptor partial agonist,cAMP signaling pathway,2,4,5,HTR1A|HTR4,bbbc036_target_grounded_allowlist
+serotonin reuptake inhibitor,Neuroactive ligand-receptor interaction,19,5,29,ADRA1A|ADRA1B|ADRA1D|ADRA2A|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|DRD1|DRD2|DRD5|HRH1|HTR1A|HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin reuptake inhibitor,Calcium signaling pathway,15,5,29,ADRA1A|ADRA1B|ADRA1D|CHRM1|CHRM2|CHRM3|CHRM5|DRD1|DRD5|HRH1|HTR2A|HTR2B|HTR2C|HTR6|HTR7,bbbc036_target_grounded_allowlist
+serotonin reuptake inhibitor,Serotonergic synapse,10,5,29,CYP2C19|HTR1A|HTR2A|HTR2B|HTR2C|HTR6|HTR7|KCND2|MAOA|SLC6A4,bbbc036_target_grounded_allowlist
+serotonin reuptake inhibitor,cAMP signaling pathway,7,5,29,CHRM1|CHRM2|DRD1|DRD2|DRD5|HTR1A|HTR6,bbbc036_target_grounded_allowlist
+serotonin reuptake inhibitor,Cholinergic synapse,6,5,29,ACHE|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+serotonin transporter (sert) inhibitor,Serotonergic synapse,4,1,7,HTR2A|HTR2B|HTR2C|SLC6A4,bbbc036_target_grounded_allowlist
+serotonin transporter (sert) inhibitor,Calcium signaling pathway,3,1,7,HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+serotonin transporter (sert) inhibitor,Gap junction,3,1,7,HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+serotonin transporter (sert) inhibitor,Neuroactive ligand-receptor interaction,3,1,7,HTR2A|HTR2B|HTR2C,bbbc036_target_grounded_allowlist
+serotonin uptake inhibitor,Serotonergic synapse,2,1,2,CYP2C19|SLC6A4,bbbc036_target_grounded_allowlist
+sigma receptor agonist,Neuroactive ligand-receptor interaction,13,3,24,CHRNA2|CHRNA3|CHRNA4|CHRNA7|CHRNB2|CHRNB4|GRIN1|GRIN2A|GRIN2B|GRIN3A|OPRD1|OPRK1|OPRM1,bbbc036_target_grounded_allowlist
+sigma receptor agonist,cAMP signaling pathway,6,3,24,GRIN1|GRIN2A|GRIN2B|GRIN3A|RAC1|RAC2,bbbc036_target_grounded_allowlist
+sigma receptor agonist,Cholinergic synapse,5,3,24,CHRNA3|CHRNA4|CHRNA7|CHRNB2|CHRNB4,bbbc036_target_grounded_allowlist
+sigma receptor agonist,Rap1 signaling pathway,5,3,24,GRIN1|GRIN2A|GRIN2B|RAC1|RAC2,bbbc036_target_grounded_allowlist
+sigma receptor agonist,Ras signaling pathway,5,3,24,GRIN1|GRIN2A|GRIN2B|RAC1|RAC2,bbbc036_target_grounded_allowlist
+sirt inhibitor,Dopaminergic synapse,7,2,14,AKT1|GSK3B|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+sirt inhibitor,FoxO signaling pathway,7,2,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|SIRT1,bbbc036_target_grounded_allowlist
+sirt inhibitor,MAPK signaling pathway,7,2,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|MAPK8|PRKCA,bbbc036_target_grounded_allowlist
+sirt inhibitor,Adrenergic signaling in cardiomyocytes,6,2,14,AKT1|MAPK1|MAPK11|MAPK12|MAPK14|PRKCA,bbbc036_target_grounded_allowlist
+sirt inhibitor,ErbB signaling pathway,6,2,14,AKT1|GSK3B|MAPK1|MAPK8|PRKCA|RPS6KB1,bbbc036_target_grounded_allowlist
+sodium channel blocker,MAPK signaling pathway,11,21,37,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+sodium channel blocker,Adrenergic signaling in cardiomyocytes,10,21,37,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4|SCN5A|SCN7A,bbbc036_target_grounded_allowlist
+sodium channel blocker,Calcium signaling pathway,9,21,37,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|HTR4|PTGER1,bbbc036_target_grounded_allowlist
+sodium channel blocker,Serotonergic synapse,6,21,37,CACNA1C|CACNA1D|CACNA1F|CACNA1S|HTR3A|HTR4,bbbc036_target_grounded_allowlist
+sodium channel blocker,Neuroactive ligand-receptor interaction,5,21,37,GLRA1|GLRA2|GLRB|HTR4|PTGER1,bbbc036_target_grounded_allowlist
+sodium/calcium exchange inhibitor,cGMP-PKG signaling pathway,2,2,4,SLC8A1|TRPC6,bbbc036_target_grounded_allowlist
+sodium/hydrogen antiport inhibitor,Neuroactive ligand-receptor interaction,3,1,5,ADRA2A|GNRH1|GNRHR,bbbc036_target_grounded_allowlist
+sodium/hydrogen exchanger inhibitor,Neuroactive ligand-receptor interaction,3,1,5,ADRA2A|GNRH1|GNRHR,bbbc036_target_grounded_allowlist
+sodium/potassium/chloride transporter inhibitor,cGMP-PKG signaling pathway,2,3,9,ATP1A1|KCNMA1,bbbc036_target_grounded_allowlist
+soluble epoxide hydrolase inhibitor,Estrogen signaling pathway,3,1,4,ESR1|ESR2|GPER1,bbbc036_target_grounded_allowlist
+src and abl inhibitor,Calcium signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+src and abl inhibitor,Focal adhesion,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+src and abl inhibitor,MAPK signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+src and abl inhibitor,PI3K-Akt signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+src and abl inhibitor,Rap1 signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+stat inhibitor,Chemokine signaling pathway,2,2,2,JAK2|STAT3,bbbc036_target_grounded_allowlist
+steroid hormone inhibitor of cyp17a1 and sult2b1,Steroid hormone biosynthesis,2,1,3,CYP17A1|SULT2B1,bbbc036_target_grounded_allowlist
+succinimide antiepileptic,Calcium signaling pathway,3,1,3,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+succinimide antiepileptic,MAPK signaling pathway,3,1,3,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+synthetic estrogen,Estrogen signaling pathway,2,1,3,ESR1|ESR2,bbbc036_target_grounded_allowlist
+t cell inhibitor,Calcium signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+t cell inhibitor,cGMP-PKG signaling pathway,3,1,13,PPIF|PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+t cell inhibitor,Glutamatergic synapse,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+t cell inhibitor,MAPK signaling pathway,2,1,13,PPP3CA|PPP3R2,bbbc036_target_grounded_allowlist
+t cell inhibitor,Steroid hormone biosynthesis,2,1,13,CYP3A5|CYP3A7,bbbc036_target_grounded_allowlist
+t-type calcium channel blocker,MAPK signaling pathway,11,3,25,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4,bbbc036_target_grounded_allowlist
+t-type calcium channel blocker,Adrenergic signaling in cardiomyocytes,10,3,25,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CACNB1|CACNB2|CACNB3|CACNB4|CALM1|SCN5A,bbbc036_target_grounded_allowlist
+t-type calcium channel blocker,Calcium signaling pathway,9,3,25,CACNA1C|CACNA1D|CACNA1F|CACNA1G|CACNA1H|CACNA1I|CACNA1S|CALM1|HRH1,bbbc036_target_grounded_allowlist
+t-type calcium channel blocker,Serotonergic synapse,5,3,25,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CYP2J2,bbbc036_target_grounded_allowlist
+t-type calcium channel blocker,Vascular smooth muscle contraction,5,3,25,CACNA1C|CACNA1D|CACNA1F|CACNA1S|CALM1,bbbc036_target_grounded_allowlist
+tachykinin antagonist,Neuroactive ligand-receptor interaction,4,6,4,TAC1|TACR1|TACR2|TACR3,bbbc036_target_grounded_allowlist
+tachykinin antagonist,Calcium signaling pathway,3,6,4,TACR1|TACR2|TACR3,bbbc036_target_grounded_allowlist
+taxane,Gap junction,2,1,10,TUBB|TUBB1,bbbc036_target_grounded_allowlist
+taxane,NF-kappa B signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+taxane,PI3K-Akt signaling pathway,2,1,10,BCL2|TLR4,bbbc036_target_grounded_allowlist
+tgf beta receptor inhibitor,MAPK signaling pathway,8,4,18,EPHA2|FLT1|FLT3|KDR|MKNK1|RPS6KA1|TGFB1|TGFBR1,bbbc036_target_grounded_allowlist
+tgf beta receptor inhibitor,TGF-beta signaling pathway,6,4,18,ACVR1|ACVR1C|BMPR1A|BMPR1B|TGFB1|TGFBR1,bbbc036_target_grounded_allowlist
+tgf beta receptor inhibitor,PI3K-Akt signaling pathway,5,4,18,EPHA2|FLT1|FLT3|KDR|PRKAA1,bbbc036_target_grounded_allowlist
+tgf beta receptor inhibitor,Rap1 signaling pathway,4,4,18,EPHA2|FLT1|KDR|SRC,bbbc036_target_grounded_allowlist
+tgf beta receptor inhibitor,Ras signaling pathway,4,4,18,EPHA2|FLT1|FLT3|KDR,bbbc036_target_grounded_allowlist
+thiazide diuretic,Adrenergic signaling in cardiomyocytes,2,4,3,KCNE1|KCNQ1,bbbc036_target_grounded_allowlist
+thromboxane receptor agonist,Neuroactive ligand-receptor interaction,8,1,9,PTGDR|PTGER1|PTGER2|PTGER3|PTGER4|PTGFR|PTGIR|TBXA2R,bbbc036_target_grounded_allowlist
+thromboxane receptor agonist,Calcium signaling pathway,4,1,9,PTGER1|PTGER3|PTGFR|TBXA2R,bbbc036_target_grounded_allowlist
+thromboxane receptor agonist,cAMP signaling pathway,2,1,9,PTGER2|PTGER3,bbbc036_target_grounded_allowlist
+thyroid hormone stimulant,Neuroactive ligand-receptor interaction,2,1,2,THRA|THRB,bbbc036_target_grounded_allowlist
+toll-like receptor antagonist,cAMP signaling pathway,6,1,13,PDE10A|PDE3A|PDE4A|PDE4B|PDE4C|PDE4D,bbbc036_target_grounded_allowlist
+toll-like receptor antagonist,NF-kappa B signaling pathway,2,1,13,IL1B|TLR4,bbbc036_target_grounded_allowlist
+toll-like receptor antagonist,PI3K-Akt signaling pathway,2,1,13,IL6|TLR4,bbbc036_target_grounded_allowlist
+toll-like receptor antagonist,cGMP-PKG signaling pathway,2,1,13,PDE3A|PDE5A,bbbc036_target_grounded_allowlist
+topoisomerase inhibitor,Apoptosis,2,7,6,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+topoisomerase inhibitor,Chemokine signaling pathway,2,7,6,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+topoisomerase inhibitor,FoxO signaling pathway,2,7,6,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+topoisomerase inhibitor,MAPK signaling pathway,2,7,6,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+topoisomerase inhibitor,PI3K-Akt signaling pathway,2,7,6,CHUK|MAP2K1,bbbc036_target_grounded_allowlist
+tricyclic antidepressant,Neuroactive ligand-receptor interaction,16,2,18,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C|CHRM1|CHRM2|CHRM3|CHRM4|CHRM5|DRD2|HRH1|HTR2A|HTR2C|HTR7,bbbc036_target_grounded_allowlist
+tricyclic antidepressant,Calcium signaling pathway,11,2,18,ADRA1A|ADRA1B|ADRA1D|CHRM1|CHRM2|CHRM3|CHRM5|HRH1|HTR2A|HTR2C|HTR7,bbbc036_target_grounded_allowlist
+tricyclic antidepressant,cGMP-PKG signaling pathway,6,2,18,ADRA1A|ADRA1B|ADRA1D|ADRA2A|ADRA2B|ADRA2C,bbbc036_target_grounded_allowlist
+tricyclic antidepressant,Cholinergic synapse,5,2,18,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+tricyclic antidepressant,Regulation of actin cytoskeleton,5,2,18,CHRM1|CHRM2|CHRM3|CHRM4|CHRM5,bbbc036_target_grounded_allowlist
+trpv agonist,Neuroactive ligand-receptor interaction,4,5,19,CNR1|CNR2|GLRA1|TRPV1,bbbc036_target_grounded_allowlist
+trpv agonist,Calcium signaling pathway,3,5,19,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+trpv agonist,MAPK signaling pathway,3,5,19,CACNA1G|CACNA1H|CACNA1I,bbbc036_target_grounded_allowlist
+tubulin inhibitor,Gap junction,4,4,16,TUBA1A|TUBB|TUBB1|TUBB4B,bbbc036_target_grounded_allowlist
+tubulin inhibitor,Apoptosis,3,4,16,BCL2|JUN|TUBA1A,bbbc036_target_grounded_allowlist
+tubulin inhibitor,Estrogen signaling pathway,2,4,16,BCL2|JUN,bbbc036_target_grounded_allowlist
+tubulin inhibitor,Focal adhesion,2,4,16,BCL2|JUN,bbbc036_target_grounded_allowlist
+tubulin inhibitor,MAPK signaling pathway,2,4,16,JUN|MAPT,bbbc036_target_grounded_allowlist
+tubulin polymerisation inhibitor,Apoptosis,2,1,6,JUN|TUBA1A,bbbc036_target_grounded_allowlist
+tubulin polymerisation inhibitor,Gap junction,2,1,6,TUBA1A|TUBB,bbbc036_target_grounded_allowlist
+tubulin polymerization inhibitor,Gap junction,3,7,12,TUBA4A|TUBB|TUBB1,bbbc036_target_grounded_allowlist
+tubulin polymerization inhibitor,PI3K-Akt signaling pathway,3,7,12,BCL2|IGF1R|TLR4,bbbc036_target_grounded_allowlist
+tubulin polymerization inhibitor,Apoptosis,2,7,12,BCL2|TUBA4A,bbbc036_target_grounded_allowlist
+tubulin polymerization inhibitor,Focal adhesion,2,7,12,BCL2|IGF1R,bbbc036_target_grounded_allowlist
+tubulin polymerization inhibitor,MAPK signaling pathway,2,7,12,IGF1R|MAPT,bbbc036_target_grounded_allowlist
+tyrosine kinase inhibitor,PI3K-Akt signaling pathway,11,13,27,CDK2|CDK4|CDK6|CSF1R|EGFR|ERBB2|FLT3|KIT|MAPK1|MAPK3|PDGFRB,bbbc036_target_grounded_allowlist
+tyrosine kinase inhibitor,MAPK signaling pathway,8,13,27,CSF1R|EGFR|ERBB2|FLT3|KIT|MAPK1|MAPK3|PDGFRB,bbbc036_target_grounded_allowlist
+tyrosine kinase inhibitor,Estrogen signaling pathway,7,13,27,EGFR|ESR1|ESR2|MAPK1|MAPK3|NCOA1|NCOA2,bbbc036_target_grounded_allowlist
+tyrosine kinase inhibitor,Ras signaling pathway,7,13,27,CSF1R|EGFR|FLT3|KIT|MAPK1|MAPK3|PDGFRB,bbbc036_target_grounded_allowlist
+tyrosine kinase inhibitor,Rap1 signaling pathway,6,13,27,CSF1R|EGFR|KIT|MAPK1|MAPK3|PDGFRB,bbbc036_target_grounded_allowlist
+urokinase inhibitor,Neuroactive ligand-receptor interaction,3,1,5,ADRA2A|GNRH1|GNRHR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 1 (vegfr1) inhibitor,Calcium signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 1 (vegfr1) inhibitor,Focal adhesion,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 1 (vegfr1) inhibitor,MAPK signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 1 (vegfr1) inhibitor,PI3K-Akt signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 1 (vegfr1) inhibitor,Rap1 signaling pathway,4,1,4,EGFR|FLT1|FLT4|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 2 (vegfr2) inhibitor,Calcium signaling pathway,2,3,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 2 (vegfr2) inhibitor,Focal adhesion,2,3,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 2 (vegfr2) inhibitor,MAPK signaling pathway,2,3,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+vascular endothelial growth factor receptor 2 (vegfr2) inhibitor,PI3K-Akt signaling pathway,2,3,2,ERBB2|KDR,bbbc036_target_grounded_allowlist
+vegfr inhibitor,Calcium signaling pathway,7,5,8,ERBB2|FGFR1|FLT1|KDR|PDGFRA|PDGFRB|RET,bbbc036_target_grounded_allowlist
+vegfr inhibitor,MAPK signaling pathway,7,5,8,ERBB2|FGFR1|FLT1|KDR|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+vegfr inhibitor,PI3K-Akt signaling pathway,7,5,8,ERBB2|FGFR1|FLT1|KDR|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+vegfr inhibitor,Rap1 signaling pathway,6,5,8,FGFR1|FLT1|KDR|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+vegfr inhibitor,Ras signaling pathway,6,5,8,FGFR1|FLT1|KDR|KIT|PDGFRA|PDGFRB,bbbc036_target_grounded_allowlist
+voltage-gated potassium channel blocker,Cholinergic synapse,5,2,5,KCNQ1|KCNQ2|KCNQ3|KCNQ4|KCNQ5,bbbc036_target_grounded_allowlist
