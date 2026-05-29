@@ -293,19 +293,5 @@ pert_dose
 The training code applies the split lock by canonical SMILES and estimates
 normalization statistics on the training split.
 
-## Release Policy
 
-- Use placeholders such as `<DATA_ROOT>`, `<ARTIFACT_ROOT>`, and
-  `<PROJECT_ROOT>` in repository-facing text.
-- Do not commit local server paths, usernames, checkpoints, HDF5 datasets,
-  parquet tables, cached outputs, or private logs.
-- Run `python scripts/check_release_ready.py` before publishing updates.
 
-## Citation
-
-If you use MVCPert in research, please cite the accompanying manuscript:
-
-```text
-MVCPert: multimodal virtual cell modelling of transcriptomic and
-morphological responses to chemical perturbations
-```
