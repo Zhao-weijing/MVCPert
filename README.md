@@ -17,8 +17,7 @@
   <a href="#repository-guide">Repository Guide</a> |
   <a href="#reproducibility-workflows">Workflows</a> |
   <a href="#code-map">Code Map</a> |
-  <a href="#datasets">Datasets</a> |
-  <a href="#citation">Citation</a>
+  <a href="#datasets">Datasets</a>
 </p>
 
 MVCPert is a baseline-conditioned framework for predicting paired perturbed
