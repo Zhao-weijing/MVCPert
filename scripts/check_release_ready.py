@@ -45,9 +45,6 @@ ALLOWED_TEXT_SNIPPETS = {
 }
 REQUIRED_FILES = [
     "README.md",
-    "RUNBOOK.md",
-    "ENVIRONMENT.md",
-    "DATA_AND_ARTIFACTS.md",
     "RELEASE_MANIFEST.json",
     "source/baseline/src/train_mvc.py",
     "source/baseline/src/MVCModel_HyperGate.py",

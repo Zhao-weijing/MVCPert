@@ -67,7 +67,7 @@ def apply_noise(data, noise_std=0.01, dist='student_t', df=3):
 
 def apply_feature_dropout(data, drop_prob=0.05, keep_zeros=True):
     """随机 Feature Dropout（Masking），模拟特征缺失或测量失败。
-    
+
     对于高维生物数据（GE/CP），Masking 是比 Mixup 更稳健的正则化手段，
     因为它强制模型利用特征间的共线性（co-linearity）来恢复信息。
     """
@@ -144,7 +144,7 @@ class Gene_Dataset(Dataset):
         self.dataset_name = dataset_name
         self.dataset_name_part = self.dataset_name.split('_')[0]
         self.augment = augment # 是否启用数据增强
-        
+
         # 加载smiles嵌入
         embedding_file = EMBEDDING_CONFIG.get(self.mol_feature_type)
         if embedding_file:
@@ -154,7 +154,7 @@ class Gene_Dataset(Dataset):
                 self.smi2emb = pickle.load(f)
         else:
             raise ValueError(f"不支持的分子特征类型: {self.mol_feature_type}")
-        
+
         # 加载基因编码器数据
         encoder_file = GENE_ENCODER_MAP.get(self.gene_encoder_type)
         if encoder_file:
@@ -162,17 +162,17 @@ class Gene_Dataset(Dataset):
                 part = self.dataset_name.split('_')[1]  # 例如从'Tahoe_P2'中提取'P2'
                 self.X1_data = load_from_HDF(f'{DATA_ROOT}/Tahoe-100M/Tahoe_mini/{part}/{encoder_file}')
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/Tahoe-100M/Tahoe_mini/{part}/default.h5')
-            
+
             elif self.dataset_name == 'BBBC036':
                 self.X1_data = load_from_HDF(f'{DATA_ROOT}/MVC/CDRPBIO-BBBC036-Bray/Processed_Paired_GE.h5')
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/MVC/CDRPBIO-BBBC036-Bray/Processed_Paired_GE.h5')
             elif self.dataset_name == 'BBBC047':
                 self.X1_data = load_from_HDF(f'{DATA_ROOT}/MVC/CDRP-BBBC047-Bray/Processed_Paired_GE.h5')
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/MVC/CDRP-BBBC047-Bray/Processed_Paired_GE.h5')
-                
+
             elif self.dataset_name == 'LINCS':
                 self.X1_data = load_from_HDF(f'../Gene_encoder/{self.dataset_name}/{encoder_file}')
-                self.X2_data = load_from_HDF(f'../Gene_encoder/LINCS/default.h5')          
+                self.X2_data = load_from_HDF(f'../Gene_encoder/LINCS/default.h5')
             elif self.dataset_name == 'LINCS965':
                 self.X1_data = load_from_HDF(f'../Gene_encoder/{self.dataset_name}/{encoder_file}')
                 self.X2_data = load_from_HDF(f'../Gene_encoder/LINCS965/default.h5')
@@ -182,7 +182,7 @@ class Gene_Dataset(Dataset):
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/CIGS/CIGS_2Cell_lines.h5')
         else:
             raise ValueError(f"不支持的基因编码器类型: {self.gene_encoder_type}")
-        
+
         # ===== 2. 计算 Systema 用的 perturbed centroid =====
         # 只拿“扰动后”样本做中心（即 X2_data['target']）
         # 只用训练集里面的扰动中心
@@ -191,10 +191,10 @@ class Gene_Dataset(Dataset):
     def __getitem__(self, index):
         # print(index, self.mol_id[index])
         mol_feature = self.smi2emb[str(self.mol_id[index])].astype(np.float32)
-        
+
         control_gene = self.X1_data['control'][index]
         target_gene = self.X1_data['target'][index]
-        
+
         # --- 数据增强 ---
         if self.augment:
             # 降低增强强度
@@ -202,10 +202,10 @@ class Gene_Dataset(Dataset):
             control_gene = apply_gene_masking(control_gene, mask_prob=0.05)
             # 移除分子特征增强，避免破坏Embedding语义
             # mol_feature = apply_gaussian_noise(mol_feature, noise_level=0.01)
-            
+
         control_gene = control_gene.astype(np.float32)
         mol_feature = mol_feature.astype(np.float32)
-        
+
         # x1表示基因编码器数据， x2表示原始的基因数据
         return control_gene, target_gene, self.X2_data['control'][index],\
             self.X2_data['target'][index], mol_feature, self.mol_id[index]
@@ -213,7 +213,7 @@ class Gene_Dataset(Dataset):
     # ===== 3. 给外部调用者暴露接口 =====
     def get_perturbed_centroid(self):
         return self.perturbed_centroid
-    
+
     def __len__(self):
         return self.mol_id.shape[0]
 
@@ -229,7 +229,7 @@ class Gene_Cellline_Dataset(Dataset):
         self.cid = cid
         self.dataset_name_part = self.dataset_name.split('_')[0]
         self.augment = augment
-        
+
         # 加载smiles嵌入
         embedding_file = EMBEDDING_CONFIG.get(self.mol_feature_type)
         if embedding_file:
@@ -238,7 +238,7 @@ class Gene_Cellline_Dataset(Dataset):
                 self.smi2emb = pickle.load(f)
         else:
             raise ValueError(f"不支持的分子特征类型: {self.mol_feature_type}")
-        
+
         # 加载基因编码器数据
         encoder_file = GENE_ENCODER_MAP.get(self.gene_encoder_type)
         if encoder_file:
@@ -248,7 +248,7 @@ class Gene_Cellline_Dataset(Dataset):
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/Tahoe-100M/Tahoe_mini/{part}/default.h5')
             elif self.dataset_name == 'LINCS':
                 self.X1_data = load_from_HDF(f'{DATA_ROOT}/Gene_encoder/{self.dataset_name}/{encoder_file}')
-                self.X2_data = load_from_HDF(f'{DATA_ROOT}/Gene_encoder/LINCS/default.h5')          
+                self.X2_data = load_from_HDF(f'{DATA_ROOT}/Gene_encoder/LINCS/default.h5')
             elif self.dataset_name == 'LINCS965':
                 self.X1_data = load_from_HDF(f'{DATA_ROOT}/Gene_encoder/{self.dataset_name}/{encoder_file}')
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/Gene_encoder/LINCS965/default.h5')
@@ -258,24 +258,24 @@ class Gene_Cellline_Dataset(Dataset):
                 self.X2_data = load_from_HDF(f'{DATA_ROOT}/CIGS/CIGS_2Cell_lines.h5')
         else:
             raise ValueError(f"不支持的基因编码器类型: {self.gene_encoder_type}")
-                
+
         # ===== 2. 计算 Systema 用的 perturbed centroid =====
         self.perturbed_centroid = perturbed_centroid
 
     def __getitem__(self, index):
         mol_feature = self.smi2emb[str(self.mol_id[index])].astype(np.float32)
-        
+
         control_gene = self.X1_data['control'][index]
         target_gene = self.X1_data['target'][index]
-        
+
         # --- 数据增强 ---
         if self.augment:
             control_gene = apply_gaussian_noise(control_gene, noise_level=0.01)
             control_gene = apply_gene_masking(control_gene, mask_prob=0.05)
-        
+
         control_gene = control_gene.astype(np.float32)
         mol_feature = mol_feature.astype(np.float32)
-        
+
         return control_gene, target_gene, self.X2_data['control'][index],\
             self.X2_data['target'][index], mol_feature, self.mol_id[index], \
                 self.cid[index]
@@ -283,7 +283,7 @@ class Gene_Cellline_Dataset(Dataset):
     # ===== 3. 给外部调用者暴露接口 =====
     def get_perturbed_centroid(self):
         return self.perturbed_centroid
-    
+
     def __len__(self):
         return self.mol_id.shape[0]
 
@@ -296,7 +296,7 @@ class Gene_47_Dataset(Dataset):
         self.mol_id = mol_id
         self.dataset_name = dataset_name
         self.augment = augment
-        
+
         # 加载smiles嵌入
         embedding_file = EMBEDDING_CONFIG.get(self.mol_feature_type)
         if embedding_file:
@@ -310,23 +310,23 @@ class Gene_47_Dataset(Dataset):
 
         # 加载图像特征数据
         self.image_data = load_from_HDF(f'{ARTIFACT_ROOT}/data/Image/{self.dataset_name}_data.h5')
-        
+
         # ===== 2. 计算 Systema 用的 perturbed centroid =====
         self.perturbed_centroid = perturbed_centroid
-                
+
     def __getitem__(self, index):
         # print(index, self.mol_id[index])
         mol_feature = self.smi2emb[str(self.mol_id[index])].astype(np.float32)
-        
+
         control_ge = self.image_data['control_GE'][index]
         target_ge = self.image_data['target_GE'][index]
-        
+
         # --- 数据增强 ---
         if self.augment:
             # 降低噪声强度
             control_ge = apply_gaussian_noise(control_ge, noise_level=0.01)
             # 降低Mask比例
-            control_ge = apply_gene_masking(control_ge, mask_prob=0.05) 
+            control_ge = apply_gene_masking(control_ge, mask_prob=0.05)
 
         control_ge = control_ge.astype(np.float32)
         mol_feature = mol_feature.astype(np.float32)
@@ -336,7 +336,7 @@ class Gene_47_Dataset(Dataset):
 
     def __len__(self):
         return self.mol_id.shape[0]
-    
+
     # ===== 3. 给外部调用者暴露接口 =====
     def get_perturbed_centroid(self):
         return self.perturbed_centroid
@@ -349,7 +349,7 @@ class Image_Dataset(Dataset):
         self.mol_id = mol_id
         self.dataset_name = dataset_name
         self.augment = augment
-        
+
         # 加载smiles嵌入
         embedding_file = EMBEDDING_CONFIG.get(self.mol_feature_type)
         if embedding_file:
@@ -362,18 +362,18 @@ class Image_Dataset(Dataset):
             raise ValueError(f"不支持的分子特征类型: {self.mol_feature_type}")
 
         # ===== 2. 计算 Systema 用的 perturbed centroid =====
-        self.perturbed_centroid = perturbed_centroid        
-        
+        self.perturbed_centroid = perturbed_centroid
+
         # 加载图像特征数据
         self.image_data = load_from_HDF(f'{ARTIFACT_ROOT}/data/MVC/MVC_{self.dataset_name}/Processed_Paired_CP.h5')
-                
+
     def __getitem__(self, index):
         # print(index, self.mol_id[index])
         mol_feature = self.smi2emb[str(self.mol_id[index])].astype(np.float32)
-        
+
         control_img = self.image_data['control'][index]
         target_img = self.image_data['target'][index]
-        
+
         # --- 数据增强 ---
         if self.augment:
             # 图像特征增强：温和的噪声
@@ -387,7 +387,7 @@ class Image_Dataset(Dataset):
 
     def __len__(self):
         return self.mol_id.shape[0]
-    
+
     # ===== 3. 给外部调用者暴露接口 =====
     def get_perturbed_centroid(self):
         return self.perturbed_centroid
@@ -404,11 +404,11 @@ class MVC_Dataset(Dataset):
               证明"阻断捷径"策略有效。但训练集 (Loss ~880) 与验证集差距仍有 ~150，
               说明模型仍在一定程度上"偷懒"。
     改进策略: 在 v11.0 基础上，进一步压榨模型潜力，实行非对称施压。
-    1. 极限 Mol Dropout (25%): 
+    1. 极限 Mol Dropout (25%):
        - 继续提升分子遮挡比例至 25%，进一步增加条件推断的难度。
-    2. 强化 GE Dropout (18%): 
+    2. 强化 GE Dropout (18%):
        - 基因特征冗余度高，从 15% 微调至 18%，在不破坏语义的前提下增加难度。
-    3. 提升基础噪声 (0.005): 
+    3. 提升基础噪声 (0.005):
        - 将基础数值噪声从 0.002 提升至 0.005，增加对微小测量误差的鲁棒性。
     4. 保持 CP 稳定 (5%): 形态特征最为敏感，保持 5% 不变。
     """
@@ -511,9 +511,9 @@ class MVC_Dataset(Dataset):
         # ===== 5) 保存增强参数 =====
         self._ge_drop_prob = ge_drop_prob
         self._cp_drop_prob = cp_drop_prob
-        self._mol_drop_prob = mol_drop_prob 
+        self._mol_drop_prob = mol_drop_prob
         self._mol_noise_std = mol_noise_std # 保存分子噪声参数
-        self._noise_std = noise_std         
+        self._noise_std = noise_std
         self._target_noise_std = target_noise_std
 
     @staticmethod
@@ -621,7 +621,7 @@ class MVC_Dataset(Dataset):
 
     def _apply_intra_sample_augment(self, control_cp, control_ge):
         """内部辅助函数：应用全模态微扰 (v12.0 逻辑)"""
-        
+
         # (A) Winsor 裁剪
         if self._winsor_after_norm:
             control_cp = winsorize(control_cp, self._cp_lo, self._cp_hi)
@@ -634,7 +634,7 @@ class MVC_Dataset(Dataset):
         # (C) Feature dropout (Masking)
         control_ge = apply_feature_dropout(control_ge, drop_prob=self._ge_drop_prob, keep_zeros=True)
         control_cp = apply_feature_dropout(control_cp, drop_prob=self._cp_drop_prob, keep_zeros=True)
-            
+
         return control_cp, control_ge
 
     def __getitem__(self, index):
@@ -645,7 +645,7 @@ class MVC_Dataset(Dataset):
         if self.augment:
             # 2. 应用细胞状态增强
             c_cp, c_ge = self._apply_intra_sample_augment(c_cp, c_ge)
-            
+
             # 3. 分子特征增强 (Extreme)
             # 噪声 + 极限遮挡 (25%)
             # dose-aware 训练时，末尾追加的是 dose scalar；不要对它做噪声/遮挡。
@@ -658,7 +658,7 @@ class MVC_Dataset(Dataset):
             else:
                 mol = apply_noise(mol, noise_std=self._mol_noise_std, dist='gaussian')
                 mol = apply_feature_dropout(mol, drop_prob=self._mol_drop_prob, keep_zeros=True)
-            
+
             # 4. 目标端：保持完全纯净
             # t_cp = ...
 

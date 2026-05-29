@@ -68,8 +68,8 @@ class MVCModel(torch.nn.Module):
         # self.MMDloss = MMDLoss()
         # self.uncertainty_loss = UncertaintyLoss() # 2个任务
         self.task_weight = TaskWeight()  # 2个任务
-        
-        # Encoder        
+
+        # Encoder
         encoder_cp = [
             nn.Linear(self.n_images, self.n_en_hidden[0]),
             nn.BatchNorm1d(self.n_en_hidden[0]),
@@ -86,7 +86,7 @@ class MVCModel(torch.nn.Module):
         ]
         self.encoder_cp = nn.Sequential(*encoder_cp)
         self.encoder_ge = nn.Sequential(*encoder_ge)
-        
+
         # latent space
         self.latent = nn.Sequential(
             nn.Linear(self.n_latent, self.n_latent),
@@ -94,7 +94,7 @@ class MVCModel(torch.nn.Module):
             nn.LeakyReLU(0.1),  # 添加负斜率参数(如0.1)
             nn.Dropout(self.dropout)
         )
-                
+
         # late latent
         decoder_late_cp = [
                 nn.Linear(self.n_latent, self.n_de_hidden[0]),
@@ -110,10 +110,10 @@ class MVCModel(torch.nn.Module):
                 ]
         decoder_late_cp.append(nn.Linear(self.n_de_hidden[-1], self.n_latent))
         decoder_late_ge.append(nn.Linear(self.n_de_hidden[-1], self.n_latent))
-        
+
         self.decoder_late_cp = nn.Sequential(*decoder_late_cp)
         self.decoder_late_ge = nn.Sequential(*decoder_late_ge)
-        
+
         # decoder
         decoder_cp = [
                 # nn.Linear(1024, self.n_de_hidden[0]),
@@ -131,10 +131,10 @@ class MVCModel(torch.nn.Module):
                 ]
         decoder_cp.append(nn.Linear(self.n_de_hidden[-1], self.out_images))
         decoder_ge.append(nn.Linear(self.n_de_hidden[-1], self.out_genes))
-        
+
         self.decoder_ge = nn.Sequential(*decoder_ge)
         self.decoder_cp = nn.Sequential(*decoder_cp)
-        
+
         if self.molecule_hidden != None:  # 512
             feat_embeddings = [
                                 nn.Linear(self.molecule_feature_dim, self.molecule_hidden),
@@ -166,22 +166,22 @@ class MVCModel(torch.nn.Module):
             feat_embed = self.feat_embeddings(features)
         else:
             feat_embed = features
-        
+
         # 单模态
         # z_cp = self.encoder_cp(x_cp)
         # # z_ge = self.encoder_ge(x_ge)
         # z1_feat = torch.cat([z_cp, feat_embed], dim=1)
         # # print("z1_feat shape:", z1_feat.shape) # [1000, 1024]
-        # cp_pred = self.decoder_cp(z1_feat)        
+        # cp_pred = self.decoder_cp(z1_feat)
         # ge_pred = self.decoder_ge(z1_feat)
-        
+
         z_cp = self.encoder_cp(x_cp)
         z_ge = self.encoder_ge(x_ge)
         z1_feat = torch.cat([z_ge, z_cp, feat_embed], dim=1)
         # print("z1_feat shape:", z1_feat.shape) # [1000, 1024]
-        cp_pred = self.decoder_cp(z1_feat)        
+        cp_pred = self.decoder_cp(z1_feat)
         ge_pred = self.decoder_ge(z1_feat)
-        
+
         # # 日常融合：
         # z_cp = self.encoder_cp(x_cp)
         # z_ge = self.encoder_ge(x_ge)
@@ -189,7 +189,7 @@ class MVCModel(torch.nn.Module):
         # # print("z1_feat shape:", z1_feat.shape) # [1000, 1536]
         # cp_pred = self.decoder_cp(z1_feat)
         # ge_pred = self.decoder_ge(z1_feat)
-        
+
         # 早期融合：将分子特征和图特征一起编码
         # print("x_cp shape:", x_cp.shape) # [1000, 745])
         # print("x_ge shape:", x_ge.shape) # [1000, 977])
@@ -198,33 +198,33 @@ class MVCModel(torch.nn.Module):
         # z1_feat = self.latent(z_cp_ge) # [1000, 256])
         # ge_pred = self.decoder_ge(z1_feat)
         # cp_pred = self.decoder_cp(z1_feat)
-        
+
         # 中期编码
         # z_cp = self.encoder_cp(x_cp)
         # z_ge = self.encoder_ge(x_ge)
         # # print("z_cp shape:", z_cp.shape) # [1000, 256])
-        # z1_feat = torch.cat([z_cp, z_ge, feat_embed], dim=1)    
+        # z1_feat = torch.cat([z_cp, z_ge, feat_embed], dim=1)
         # # print("z1_feat shape:", z1_feat.shape) # [1000, 1536]
         # cp_pred_from_cp = self.decoder_late_cp(z1_feat)
         # ge_pred_from_ge = self.decoder_late_ge(z1_feat)
         # # print("cp_pred_from_cp shape:", cp_pred_from_cp.shape) # [1000, 1]
         # ge_pred = self.decoder_ge(ge_pred_from_ge)
         # cp_pred = self.decoder_cp(cp_pred_from_cp)
-        
+
         # 后期融合：
         # z_cp = self.encoder_cp(x_cp)
-        # z_ge = self.encoder_ge(x_ge)        
+        # z_ge = self.encoder_ge(x_ge)
         # # 独立解码
         # cp_pred_from_cp = self.decoder_late_cp(z_cp)
-        # ge_pred_from_ge = self.decoder_late_ge(z_ge)                
+        # ge_pred_from_ge = self.decoder_late_ge(z_ge)
         # # 1. 最简单：拼接后接一个小网络
         # joint = torch.cat([cp_pred_from_cp, ge_pred_from_ge, feat_embed], dim=1)
         # # print("joint shape:", joint.shape) # [1000, 2234])
         # cp_pred = self.decoder_cp(joint)                 # [B, 1]
         # ge_pred = self.decoder_ge(joint)                 # [B, 1]
-        
+
         # 2. 交叉解码
-        
+
         return cp_pred, ge_pred
         # return cp_pred, ge_pred, cp_pred_from_cp, ge_pred_from_ge, feat_embed
 
@@ -263,25 +263,25 @@ class MVCModel(torch.nn.Module):
         weight_cp=0.01,
         weight_ge=1.0,
     ):
-        
+
         mse_ge = F.mse_loss(target_ge, ge_pred, reduction="sum")
         mse_cp = F.mse_loss(target_cp, cp_pred, reduction="sum")
-        
+
         # with torch.no_grad():
         #     # 让难度大的任务权重小一些（避免主导训练）
         #     weight_ge = mse_cp / (mse_ge + mse_cp + 1e-8)
         #     weight_cp = mse_ge / (mse_ge + mse_cp + 1e-8)
-        
+
         # balanced_loss = weight_ge * mse_ge + weight_cp * mse_cp
-        
-        # mse_cp = weight_cp * mse_cp        
+
+        # mse_cp = weight_cp * mse_cp
         # mse_ge = weight_ge * mse_ge   # weight_cp=0.01, weight_ge=1.0 有进步，降低形态果然可以
-        
+
         # print(mse_cp.item(), mse_ge.item())
         # balanced_loss = self.task_weight.loss(mse_ge, mse_cp)
-        
+
         # loss = mse_ge
-        
+
         total_loss = mse_ge + mse_cp
         total_loss = total_loss + self._compute_dose_ordinal_aux_loss(
             ge_pred=ge_pred,
@@ -292,7 +292,7 @@ class MVCModel(torch.nn.Module):
         )
         return total_loss
         # return balanced_loss
-    
+
     def get_feat_embdding(self, features):
         feat_embed = self.feat_embeddings(features)
         return feat_embed
@@ -322,7 +322,7 @@ class MVCModel(torch.nn.Module):
                 optimizer.zero_grad()
 
                 cp_pred, ge_pred = self.forward(control_cp, control_ge, features)
-                
+
                 loss = self.loss(
                     target_cp,
                     target_ge,
@@ -384,7 +384,7 @@ class MVCModel(torch.nn.Module):
                 # cid = np.array(list(cid))
                 # sig = np.array(list(sig))
                 test_size += control_cp.shape[0]
-                
+
                 # cp_pred, ge_pred, _, _, _ = self.forward(control_cp, control_ge, mol_features)
                 cp_pred, ge_pred = self.forward(control_cp, control_ge, mol_features)
                 loss_ls = self.loss(
@@ -396,7 +396,7 @@ class MVCModel(torch.nn.Module):
                     features=mol_features,
                     mol_ids=mol_id,
                 )
-                
+
                 if loss_item != None:
                     for idx, k in enumerate(loss_item):
                         test_dict[k] += loss_ls.item()
@@ -420,7 +420,7 @@ class MVCModel(torch.nn.Module):
             metrics_dict_all[k] = metrics_dict_all[k] / test_size
 
         return test_dict, metrics_dict_all, metrics_dict_all_ls
-    
+
 
     def predict_profile(self, loader):
         """predict profiles."""
@@ -491,7 +491,7 @@ class MVCModel(torch.nn.Module):
                     x2_array = torch.cat([x2_array, control_ge], dim=0)
                     x2_cp_pred_array = torch.cat([x2_cp_pred_array, cp_pred], dim=0)
                     x2_ge_pred_array = torch.cat([x2_ge_pred_array, ge_pred], dim=0)
-                    
+
                     cp_emb_array = torch.cat([cp_emb_array, cp_emb], dim=0)
                     ge_emb_array = torch.cat([ge_emb_array, ge_emb], dim=0)
                     smiles_emb_array = torch.cat([smiles_emb_array, smiles_emb], dim=0)
@@ -1094,7 +1094,7 @@ class MVCModel_NoCP(torch.nn.Module):
         self.dev = kwargs.get('device', torch.device('cpu'))
         self.dropout = kwargs.get('dropout', 0.2)
         self.random_seed = kwargs.get('random_seed', 1234)
-        
+
         # 只保留GE编码器
         encoder_ge = [
             nn.Linear(self.n_genes, self.n_en_hidden[0]),
@@ -1103,7 +1103,7 @@ class MVCModel_NoCP(torch.nn.Module):
             nn.Dropout(self.dropout)
         ]
         self.encoder_ge = nn.Sequential(*encoder_ge)
-        
+
         # 只保留GE解码器
         decoder_ge = [
                 nn.Linear(self.n_en_hidden[0] + self.molecule_hidden, self.n_de_hidden[0]),
@@ -1112,9 +1112,9 @@ class MVCModel_NoCP(torch.nn.Module):
                 nn.Dropout(self.dropout)
                 ]
         decoder_ge.append(nn.Linear(self.n_de_hidden[-1], self.out_genes))
-        
+
         self.decoder_ge = nn.Sequential(*decoder_ge)
-        
+
         if self.molecule_hidden != None:
             feat_embeddings = [
                                 nn.Linear(self.molecule_feature_dim, self.molecule_hidden),
@@ -1150,18 +1150,18 @@ class MVCModel_NoCP(torch.nn.Module):
             feat_embed = self.feat_embeddings(features)
         else:
             feat_embed = features
-        
+
         # 只使用GE模态和分子特征
         z_ge = self.encoder_ge(x_ge)
         z1_feat = torch.cat([z_ge, feat_embed], dim=1)
         ge_pred = self.decoder_ge(z1_feat)
-        
+
         return ge_pred
 
     def loss(self, target_ge, ge_pred, weight_ge=1.0):
         mse_ge = F.mse_loss(target_ge, ge_pred, reduction="sum")
         return mse_ge
-    
+
     def get_feat_embdding(self, features):
         feat_embed = self.feat_embeddings(features)
         return feat_embed
@@ -1189,7 +1189,7 @@ class MVCModel_NoCP(torch.nn.Module):
                 optimizer.zero_grad()
 
                 ge_pred = self.forward(control_cp, control_ge, features)
-                
+
                 loss = self.loss(target_ge, ge_pred)
 
                 loss_value += loss.item()
@@ -1238,10 +1238,10 @@ class MVCModel_NoCP(torch.nn.Module):
                     control_cp, control_ge, target_cp, target_ge, mol_features, self.dev
                 )
                 test_size += control_cp.shape[0]
-                
+
                 ge_pred = self.forward(control_cp, control_ge, mol_features)
                 loss_ls = self.loss(target_ge, ge_pred)
-                
+
                 if loss_item != None:
                     for idx, k in enumerate(loss_item):
                         test_dict[k] += loss_ls.item()
@@ -1443,7 +1443,7 @@ class MVCModel_NoGE(torch.nn.Module):
         self.dev = kwargs.get('device', torch.device('cpu'))
         self.dropout = kwargs.get('dropout', 0.2)
         self.random_seed = kwargs.get('random_seed', 1234)
-        
+
         # 只保留CP编码器
         encoder_cp = [
             nn.Linear(self.n_images, self.n_en_hidden[0]),
@@ -1452,7 +1452,7 @@ class MVCModel_NoGE(torch.nn.Module):
             nn.Dropout(self.dropout)
         ]
         self.encoder_cp = nn.Sequential(*encoder_cp)
-        
+
         # 只保留CP解码器
         decoder_cp = [
                 nn.Linear(self.n_en_hidden[0] + self.molecule_hidden, self.n_de_hidden[0]),
@@ -1461,9 +1461,9 @@ class MVCModel_NoGE(torch.nn.Module):
                 nn.Dropout(self.dropout)
                 ]
         decoder_cp.append(nn.Linear(self.n_de_hidden[-1], self.out_images))
-        
+
         self.decoder_cp = nn.Sequential(*decoder_cp)
-        
+
         if self.molecule_hidden != None:
             feat_embeddings = [
                                 nn.Linear(self.molecule_feature_dim, self.molecule_hidden),
@@ -1499,18 +1499,18 @@ class MVCModel_NoGE(torch.nn.Module):
             feat_embed = self.feat_embeddings(features)
         else:
             feat_embed = features
-        
+
         # 只使用CP模态和分子特征
         z_cp = self.encoder_cp(x_cp)
         z1_feat = torch.cat([z_cp, feat_embed], dim=1)
         cp_pred = self.decoder_cp(z1_feat)
-        
+
         return cp_pred
 
     def loss(self, target_cp, cp_pred, weight_cp=1.0):
         mse_cp = F.mse_loss(target_cp, cp_pred, reduction="sum")
         return mse_cp
-    
+
     def get_feat_embdding(self, features):
         feat_embed = self.feat_embeddings(features)
         return feat_embed
@@ -1538,7 +1538,7 @@ class MVCModel_NoGE(torch.nn.Module):
                 optimizer.zero_grad()
 
                 cp_pred = self.forward(control_cp, control_ge, features)
-                
+
                 loss = self.loss(target_cp, cp_pred)
 
                 loss_value += loss.item()
@@ -1587,10 +1587,10 @@ class MVCModel_NoGE(torch.nn.Module):
                     control_cp, control_ge, target_cp, target_ge, mol_features, self.dev
                 )
                 test_size += control_cp.shape[0]
-                
+
                 cp_pred = self.forward(control_cp, control_ge, mol_features)
                 loss_ls = self.loss(target_cp, cp_pred)
-                
+
                 if loss_item != None:
                     for idx, k in enumerate(loss_item):
                         test_dict[k] += loss_ls.item()

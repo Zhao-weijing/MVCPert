@@ -121,10 +121,10 @@ class DynamicMultiModalDatasetWrapper(Dataset):
     """包装器类，将 DynamicMultiModalDataset 的字典输出转换为元组格式"""
     def __init__(self, dynamic_dataset):
         self.dataset = dynamic_dataset
-        
+
     def __len__(self):
         return len(self.dataset)
-    
+
     def __getitem__(self, idx):
         sample = self.dataset[idx]
         # 将字典格式转换为元组格式: (control_CP, control_GE, target_CP, target_GE, mol_feature, mol_id)
@@ -137,11 +137,11 @@ class DynamicMultiModalDatasetWrapper(Dataset):
             sample['drug'],         # 已经是 torch.Tensor
             sample['smile']         # 字符串
         )
-    
+
     def get_perturbed_centroid(self):
         """返回扰动中心（占位符，如果需要可以从数据中计算）"""
         return self.dataset.perturbed_centroid_CP, self.dataset.perturbed_centroid_GE
-    
+
     def close(self):
         """关闭底层数据集的文件句柄"""
         if hasattr(self.dataset, 'close'):
@@ -151,31 +151,31 @@ class DynamicMultiModalDatasetWrapper(Dataset):
 def get_split_indices_from_smiles(h5_path, smiles_list, split_type='smiles_split', n_folds=5, random_seed=3407):
     """
     从 HDF5 文件中根据 SMILES 列表获取对应的 split_id 列表
-    
+
     Args:
         h5_path: HDF5 文件路径（可以是 GE 或 CP 文件）
         smiles_list: SMILES 列表
         split_type: 分割类型
         n_folds: 交叉验证折数
         random_seed: 随机种子
-    
+
     Returns:
         split_indices: split_id 列表
     """
     with h5py.File(h5_path, 'r') as f:
         all_smiles = f['combined']['smiles'][:].astype(str)
         all_split_ids = f['combined']['split_id'][:]
-    
+
     # 将 SMILES 列表转换为字符串并去除可能的空格
     smiles_list_clean = [str(s).strip() for s in smiles_list]
     all_smiles_clean = np.array([str(s).strip() for s in all_smiles])
-    
+
     # 将 SMILES 列表转换为集合以便快速查找
     smiles_set = set(smiles_list_clean)
-    
+
     # 找到匹配的 split_id
     matching_indices = np.where(np.isin(all_smiles_clean, smiles_set))[0]
-    
+
     if len(matching_indices) == 0:
         # 如果没找到匹配，尝试更宽松的匹配（检查是否有部分匹配）
         print(f"警告: 在 HDF5 文件中未找到匹配的 SMILES")
@@ -192,7 +192,7 @@ def get_split_indices_from_smiles(h5_path, smiles_list, split_type='smiles_split
             print(f"  交集示例: {list(intersection)[:3]}")
             # 使用交集重新匹配
             matching_indices = np.where(np.isin(all_smiles_clean, list(intersection)))[0]
-    
+
     split_indices = np.unique(all_split_ids[matching_indices]).tolist()
 
     return split_indices
@@ -246,7 +246,7 @@ def parse_args():
 
     parser = argparse.ArgumentParser(description="Arguments for training gene+image=MVC")
     parser.add_argument("--dataset_name", type=str, default="BBBC047") # 'BBBC047', 'BBBC036'
-    
+
     parser.add_argument("--gene_encoder_type", type=str, default='Default', help='gene_encoder_feature(Default_978, CellPLM_512,\
         geneformer_256, Openbiomed_512, scBERT_200, scFoundation_3072, scGPT_512, tGPT_1024, UCE_1280)')
     parser.add_argument("--dev", type=str, default='cuda:0')
@@ -972,7 +972,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
 
     # # 判断是否使用 Paired_Data 路径
     use_paired_data = args.use_paired_data
-    
+
     ge_h5_path = None
     cp_h5_path = None
     if use_paired_data:
@@ -993,10 +993,10 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
     if args.data_path_override:
         data_path = args.data_path_override
     print(f"Using data_path: {data_path}")
-    
+
     data = load_from_HDF(data_path)
     # print(data)
-    
+
     print('all data: total smiles / unique smiles', len(data['canonical_smiles']), len(set(data['canonical_smiles'])))
 
     train_flag = args.train_flag
@@ -1030,17 +1030,17 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         if np.any(dose_values <= 0):
             raise ValueError("use_dose_feature=True but pert_dose contains non-positive values")
         molecule_feature_dim += 1
-    
+
     Gene_encoder_type = args.gene_encoder_type
     # Default_978, CellPLM_512, geneformer_256, Openbiomed_512, scBERT_200, scFoundation_3072, scGPT_512, tGPT_1024, UCE_1280
-    
+
     input_images, input_genes = infer_input_dims_from_data(data)
     gene_emb_dim = GENE_EMBED_DIM_MAP.get(Gene_encoder_type)
     if gene_emb_dim is None:
         raise ValueError(f"Unknown gene encoder type: {Gene_encoder_type}")
     if Gene_encoder_type == 'Default':
         gene_emb_dim = input_genes
-        
+
     split_type = args.split_data_type
     train_cell_count = args.train_cell_count
     n_folds = 5
@@ -1184,16 +1184,16 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
             test_split_indices = [4]
         else:
             raise ValueError(f"不支持的 split_type: {split_type}")
-        
+
         print(f'Train split_indices: {train_split_indices} (对应前3折)')
         print(f'Valid split_indices: {valid_split_indices} (对应第4折)')
         print(f'Test split_indices: {test_split_indices} (对应第5折)')
-        
+
         # 确保 SMILES 格式一致（用于计算 perturbed_centroid）
         train_smiles = np.array([str(s).strip() for s in pair['canonical_smiles']])
         valid_smiles = np.array([str(s).strip() for s in pairv['canonical_smiles']])
         test_smiles = np.array([str(s).strip() for s in pairt['canonical_smiles']])
-        
+
         # 计算 perturbed_centroid（从训练集中计算）
         # 需要从 HDF5 文件中读取训练集数据来计算
         with h5py.File(cp_h5_path, 'r') as f:
@@ -1203,7 +1203,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
                 perturbed_centroid_CP = f['combined']['Target'][train_mask].mean(axis=0).astype(np.float32)
             else:
                 perturbed_centroid_CP = np.zeros(f['combined']['Target'].shape[1], dtype=np.float32)
-        
+
         with h5py.File(ge_h5_path, 'r') as f:
             h5_smiles = np.array([str(s).strip() for s in f['combined']['smiles'][:].astype(str)])
             train_mask = np.isin(h5_smiles, train_smiles)
@@ -1211,13 +1211,13 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
                 perturbed_centroid_GE = f['combined']['Target'][train_mask].mean(axis=0).astype(np.float32)
             else:
                 perturbed_centroid_GE = np.zeros(f['combined']['Target'].shape[1], dtype=np.float32)
-        
+
         # 设置编码器路径
         encoder_path_root = '<ARTIFACT_ROOT>/data/MVC/Molecule_encoder/'
         if not os.path.exists(encoder_path_root):
             # 尝试其他可能的路径
             encoder_path_root = '<PROJECT_ROOT>/baseline/data/MVC/Molecule_encoder/'
-        
+
         # 创建 DynamicMultiModalDataset 并包装
         # 使用 preload_data=True 可以加速数据加载，但会占用更多内存
         # 如果内存不足，可以设置为 False
@@ -1233,7 +1233,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         train_dynamic.perturbed_centroid_CP = perturbed_centroid_CP
         train_dynamic.perturbed_centroid_GE = perturbed_centroid_GE
         train = DynamicMultiModalDatasetWrapper(train_dynamic)
-        
+
         # 验证/测试集共用训练集的归一化统计，保证尺度一致
         normalization_stats = getattr(train_dynamic, "normalization_stats", None)
         valid_dynamic = DynamicMultiModalDataset(
@@ -1249,7 +1249,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         valid_dynamic.perturbed_centroid_CP = perturbed_centroid_CP
         valid_dynamic.perturbed_centroid_GE = perturbed_centroid_GE
         valid = DynamicMultiModalDatasetWrapper(valid_dynamic)
-        
+
         test_dynamic = DynamicMultiModalDataset(
             ge_h5_path=ge_h5_path,
             cp_h5_path=cp_h5_path,
@@ -1263,12 +1263,12 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         test_dynamic.perturbed_centroid_CP = perturbed_centroid_CP
         test_dynamic.perturbed_centroid_GE = perturbed_centroid_GE
         test = DynamicMultiModalDatasetWrapper(test_dynamic)
-        
+
         # 更新输入维度（从数据集中获取）
         input_images = train_dynamic.cp_dim
         input_genes = train_dynamic.gene_dim
         print(f'Updated input dimensions from dataset: images={input_images}, genes={input_genes}')
-        
+
         # 更新 gene_emb_dim 以匹配实际数据维度（如果使用 Default 编码器）
         if Gene_encoder_type == 'Default':
             gene_emb_dim = input_genes
@@ -1375,32 +1375,32 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         )
 
     train_loader = torch.utils.data.DataLoader(
-        dataset=train, 
-        batch_size=batch_size, 
+        dataset=train,
+        batch_size=batch_size,
         shuffle=train_shuffle,
         sampler=train_sampler,
-        drop_last=False, 
-        num_workers=num_workers, 
+        drop_last=False,
+        num_workers=num_workers,
         worker_init_fn=seed_worker if num_workers > 0 else None,
         pin_memory=pin_memory,
         prefetch_factor=prefetch_factor if num_workers > 0 else None,
     )
     valid_loader = torch.utils.data.DataLoader(
-        dataset=valid, 
-        batch_size=batch_size, 
-        shuffle=False, 
-        drop_last=False, 
-        num_workers=num_workers, 
+        dataset=valid,
+        batch_size=batch_size,
+        shuffle=False,
+        drop_last=False,
+        num_workers=num_workers,
         worker_init_fn=seed_worker if num_workers > 0 else None,
         pin_memory=pin_memory,
         prefetch_factor=prefetch_factor if num_workers > 0 else None,
     )
     test_loader = torch.utils.data.DataLoader(
-        dataset=test, 
-        batch_size=batch_size, 
-        shuffle=False, 
-        drop_last=False, 
-        num_workers=num_workers, 
+        dataset=test,
+        batch_size=batch_size,
+        shuffle=False,
+        drop_last=False,
+        num_workers=num_workers,
         worker_init_fn=seed_worker if num_workers > 0 else None,
         pin_memory=pin_memory,
         prefetch_factor=prefetch_factor if num_workers > 0 else None,
@@ -1446,7 +1446,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         'split_lock_path': os.path.abspath(split_lock_path) if split_lock_path else None,
         'written_split_lock_path': split_lock_written_path,
     }
-    
+
     ablation_arch_kwargs = {
         'n_genes': input_genes,
         'n_images': input_images,
@@ -1753,7 +1753,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
         model.to(dev)
         # load model
         # model.load_state_dict(torch.load(local_out + 'best_model.pt'))
-        
+
         epoch_hist, best_epoch = model.train_model(train_loader=train_loader, test_loader=valid_loader,
                                                    n_epochs=n_epochs, learning_rate=learning_rate, weight_decay=weight_decay, save_model=True)
 
@@ -1839,7 +1839,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
             ddict_data['cp_pred'] = cp_pred_array
             ddict_data['ge_pred'] = ge_pred_array
             ddict_data['smiles'] = np.array(smiles_array, dtype='S')
-            
+
             for k in ddict_data.keys():
                 print(k, type(ddict_data[k][0]), ddict_data[k].shape)
             prediction_profile_path = save_dir + f'/{name}_prediction_profile{eval_output_suffix}.h5'
@@ -2045,7 +2045,7 @@ def _train_MVCModel_impl(args, local_out, train_log_path, run_timestamp):
                 description=description,
                 extra_model_kwargs=ablation_extra_kwargs,
             )
-        
+
         print('===============消融实验完成==============')
     elif args.run_ablation:
         print(f'No ablation recipe is defined for {args.model_type} in this release.')

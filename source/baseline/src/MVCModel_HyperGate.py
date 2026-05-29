@@ -90,7 +90,7 @@ class MVCModel_HyperGate(torch.nn.Module):
         self.dose_ordinal_weight = float(kwargs.get("dose_ordinal_weight", 0.0))
         self.dose_ordinal_temperature = float(kwargs.get("dose_ordinal_temperature", 0.2))
         self.dose_ordinal_margin_scale = float(kwargs.get("dose_ordinal_margin_scale", 0.25))
-        
+
         # Keep these attributes for compatibility with older checkpoints and logs.
         self.log_vars = nn.Parameter(torch.zeros(3))
         self.loss_amplification = kwargs.get("loss_amplification", None)
@@ -520,7 +520,7 @@ class MVCModel_HyperGate(torch.nn.Module):
                 optimizer.zero_grad()
 
                 cp_pred, ge_pred = self.forward(control_cp, control_ge, features)
-                
+
                 loss = self.loss(
                     target_cp,
                     target_ge,
@@ -540,7 +540,7 @@ class MVCModel_HyperGate(torch.nn.Module):
 
             train_dict, train_metrics_dict, _ = self.test_model(loader=train_loader, loss_item=loss_item, metrics_func=metrics_func)
             train_loss = train_dict["loss"]
-            
+
             # --- FIX: Calculate validation loss BEFORE logging ---
             test_dict, test_metrics_dict, _ = self.test_model(loader=test_loader, loss_item=loss_item, metrics_func=metrics_func)
             test_loss = test_dict["loss"]
@@ -593,7 +593,7 @@ class MVCModel_HyperGate(torch.nn.Module):
                 test_size += batch_size
 
                 cp_pred, ge_pred = self.forward(control_cp, control_ge, mol_features)
-                
+
                 loss_val = self.loss(
                     target_cp,
                     target_ge,
@@ -634,7 +634,7 @@ class MVCModel_HyperGate(torch.nn.Module):
             metrics_dict_all[k] = metrics_dict_all[k] / test_size
 
         return test_dict, metrics_dict_all, metrics_dict_all_ls
-    
+
     # ... predict_profile 和 eval_x_reconstruction 保持不变 ...
     def predict_profile(self, loader):
         self.eval()

@@ -156,7 +156,7 @@ def seed_worker(worker_id):
     worker_seed = torch.initial_seed() % 2 ** 32
     np.random.seed(worker_seed)
     random.seed(worker_seed)
-    
+
 def load_from_HDF(fname):
     """Load data from a HDF5 file to a dictionary."""
     data = dict()
@@ -290,73 +290,73 @@ def compute_same_compound_dose_ordinal_loss(
 def calculate_pcc_per_sample(true_labels: np.ndarray, predicted_labels: np.ndarray) -> float:
     """
     计算每个样本的预测值与真实值之间的Pearson相关系数(PCC)，并返回所有样本的平均PCC。
-    
+
     参数:
         true_labels: 真实值数组，形状为 [样本数, 基因数]
         predicted_labels: 预测结果数组，形状为 [样本数, 基因数]
-        
+
     返回:
         所有样本的平均PCC值
     """
     # 确保输入数组形状一致
     assert true_labels.shape == predicted_labels.shape, "预测结果和真实值的形状必须一致"
-    
+
     pcc_sum = 0.0
     num_samples = true_labels.shape[0]  # 样本数量（行数）
-    
+
     # 逐样本计算PCC
     for sample in range(num_samples):
         # 获取第sample个样本的所有基因（一行数据）
         y_true = true_labels[sample, :]
         y_pred = predicted_labels[sample, :]
-        
+
         # 计算均值（每个样本内所有基因的均值）
         mean_true = np.mean(y_true)
         mean_pred = np.mean(y_pred)
-        
+
         # 计算协方差和方差（样本内基因维度）
         covariance = np.mean((y_true - mean_true) * (y_pred - mean_pred))
         variance_true = np.mean((y_true - mean_true) **2)
         variance_pred = np.mean((y_pred - mean_pred)** 2)
-        
+
         # 计算PCC（添加小常数避免除零）
         eps = 1e-8
         pcc = covariance / np.sqrt(variance_true * variance_pred + eps)
         pcc_sum += pcc
-    
+
     # 返回所有样本的平均PCC
     return pcc_sum / num_samples
 
 def calculate_rmse_per_sample(true_labels: np.ndarray, predicted_labels: np.ndarray) -> float:
     """
     计算每个样本的预测值与真实值之间的均方根误差(RMSE)，并返回所有样本的平均RMSE。
-    
+
     参数:
         true_labels: 真实值数组，形状为 [样本数, 基因数]
         predicted_labels: 预测结果数组，形状为 [样本数, 基因数]
-        
+
     返回:
         所有样本的平均RMSE值
     """
     # 确保输入数组形状一致
     assert true_labels.shape == predicted_labels.shape, "预测结果和真实值的形状必须一致"
-    
+
     rmse_sum = 0.0
     num_samples = true_labels.shape[0]  # 样本数量（行数）
-    
+
     # 逐样本计算RMSE
     for sample in range(num_samples):
         # 获取第sample个样本的所有基因（一行数据）
         y_true = true_labels[sample, :]
         y_pred = predicted_labels[sample, :]
-        
+
         # 计算均方误差(MSE)
         mse = np.mean((y_true - y_pred) ** 2)
-        
+
         # 计算RMSE并累加
         rmse = np.sqrt(mse)
         rmse_sum += rmse
-    
+
     # 返回所有样本的平均RMSE
     return rmse_sum / num_samples
 
@@ -415,15 +415,15 @@ def getSplitsByGroupKFold(groups, n_splits, shuffle, random_state):
         groups_simple = np.array([str(g) for g in groups])
     else:
         groups_simple = np.array(groups)
-    
+
     if shuffle:
         # Use the simplified groups for unique identification
         unique_groups = np.unique(groups_simple)
         rnd_renames = sklearn.utils.shuffle(np.arange(len(unique_groups)), random_state=random_state)
-        
+
         # Create a mapping from original values to renamed values
         group_to_rename = {g: rnd_renames[i] for i, g in enumerate(unique_groups)}
-        
+
         # Use the mapping directly instead of argwhere
         groups_renamed = np.array([group_to_rename[g] for g in groups_simple])
         kfsplit = kf.split(X=np.zeros(len(groups)), groups=groups_renamed)
@@ -432,7 +432,7 @@ def getSplitsByGroupKFold(groups, n_splits, shuffle, random_state):
 
     folds = [list(x[1]) for x in kfsplit]
     folds_nums = list(range(len(folds)))
-    
+
     tr_fold_nums = folds_nums[:-2]
     ind_tr = sum([folds[i] for i in tr_fold_nums], [])
     ind_va = folds[folds_nums[-2]]
