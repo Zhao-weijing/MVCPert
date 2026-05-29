@@ -6,8 +6,10 @@ the goal is to make the main model, training entry point, figure scripts, and
 small tabular evidence easy to inspect and reuse. The paper source is not
 included in this release.
 
+
 This is not a full artifact mirror. Large datasets, checkpoints, prediction
 profiles, and private run directories are intentionally excluded.
+
 
 ## Contents
 
